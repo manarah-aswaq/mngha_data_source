@@ -1,0 +1,8 @@
+framework module MnghaDataSource {
+    umbrella header "MnghaDataSource.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

@@ -2509,78 +2509,48 @@ __attribute__((swift_name("NafathLoginDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RefillData")))
 @interface MDSRefillData : MDSBase
-- (instancetype)initWithOrdDT:(NSString * _Nullable)ordDT connORDID:(NSString * _Nullable)connORDID ordNM:(NSString * _Nullable)ordNM ordCD:(NSString * _Nullable)ordCD hspiTPCD:(NSString * _Nullable)hspiTPCD rflREQID:(NSString * _Nullable)rflREQID medRMK:(NSString * _Nullable)medRMK ctyNM:(NSString * _Nullable)ctyNM hmpsADDR:(NSString * _Nullable)hmpsADDR addr:(NSString * _Nullable)addr phcWEST:(NSString * _Nullable)phcWEST __attribute__((swift_name("init(ordDT:connORDID:ordNM:ordCD:hspiTPCD:rflREQID:medRMK:ctyNM:hmpsADDR:addr:phcWEST:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithHspiTpCd:(NSString * _Nullable)hspiTpCd hspTpCd:(NSString * _Nullable)hspTpCd connOrdId:(NSString * _Nullable)connOrdId ordCd:(NSString * _Nullable)ordCd ordNm:(NSString * _Nullable)ordNm ordDt:(NSString * _Nullable)ordDt __attribute__((swift_name("init(hspiTpCd:hspTpCd:connOrdId:ordCd:ordNm:ordDt:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSRefillDataCompanion *companion __attribute__((swift_name("companion")));
-- (MDSRefillData *)doCopyOrdDT:(NSString * _Nullable)ordDT connORDID:(NSString * _Nullable)connORDID ordNM:(NSString * _Nullable)ordNM ordCD:(NSString * _Nullable)ordCD hspiTPCD:(NSString * _Nullable)hspiTPCD rflREQID:(NSString * _Nullable)rflREQID medRMK:(NSString * _Nullable)medRMK ctyNM:(NSString * _Nullable)ctyNM hmpsADDR:(NSString * _Nullable)hmpsADDR addr:(NSString * _Nullable)addr phcWEST:(NSString * _Nullable)phcWEST __attribute__((swift_name("doCopy(ordDT:connORDID:ordNM:ordCD:hspiTPCD:rflREQID:medRMK:ctyNM:hmpsADDR:addr:phcWEST:)")));
+- (MDSRefillData *)doCopyHspiTpCd:(NSString * _Nullable)hspiTpCd hspTpCd:(NSString * _Nullable)hspTpCd connOrdId:(NSString * _Nullable)connOrdId ordCd:(NSString * _Nullable)ordCd ordNm:(NSString * _Nullable)ordNm ordDt:(NSString * _Nullable)ordDt __attribute__((swift_name("doCopy(hspiTpCd:hspTpCd:connOrdId:ordCd:ordNm:ordDt:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="addr")
-*/
-@property NSString * _Nullable addr __attribute__((swift_name("addr")));
-
-/**
- * @note annotations
  *   kotlinx.serialization.SerialName(value="conn_ORD_ID")
 */
-@property NSString * _Nullable connORDID __attribute__((swift_name("connORDID")));
+@property (readonly) NSString * _Nullable connOrdId __attribute__((swift_name("connOrdId")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="cty_NM")
+ *   kotlinx.serialization.SerialName(value="hsp_TP_CD")
 */
-@property NSString * _Nullable ctyNM __attribute__((swift_name("ctyNM")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="hmps_ADDR")
-*/
-@property NSString * _Nullable hmpsADDR __attribute__((swift_name("hmpsADDR")));
+@property (readonly) NSString * _Nullable hspTpCd __attribute__((swift_name("hspTpCd")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="hspi_TP_CD")
 */
-@property NSString * _Nullable hspiTPCD __attribute__((swift_name("hspiTPCD")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="med_RMK")
-*/
-@property NSString * _Nullable medRMK __attribute__((swift_name("medRMK")));
+@property (readonly) NSString * _Nullable hspiTpCd __attribute__((swift_name("hspiTpCd")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="ord_CD")
 */
-@property NSString * _Nullable ordCD __attribute__((swift_name("ordCD")));
+@property (readonly) NSString * _Nullable ordCd __attribute__((swift_name("ordCd")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="ord_DT")
 */
-@property NSString * _Nullable ordDT __attribute__((swift_name("ordDT")));
+@property (readonly) NSString * _Nullable ordDt __attribute__((swift_name("ordDt")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="ord_NM")
 */
-@property NSString * _Nullable ordNM __attribute__((swift_name("ordNM")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="phc_WEST")
-*/
-@property NSString * _Nullable phcWEST __attribute__((swift_name("phcWEST")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="rfl_REQ_ID")
-*/
-@property NSString * _Nullable rflREQID __attribute__((swift_name("rflREQID")));
+@property (readonly) NSString * _Nullable ordNm __attribute__((swift_name("ordNm")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2601,24 +2571,60 @@ __attribute__((swift_name("RefillData.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RefillDto")))
 @interface MDSRefillDto : MDSBase
-- (instancetype)initWithRefillData:(NSArray<MDSRefillData *> * _Nullable)refillData connORDID:(NSString * _Nullable)connORDID __attribute__((swift_name("init(refillData:connORDID:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithRefillData:(NSArray<MDSRefillData *> * _Nullable)refillData connOrdId:(NSString * _Nullable)connOrdId hmpsAddr:(NSString * _Nullable)hmpsAddr phcWest:(NSString * _Nullable)phcWest mtelNo:(NSString * _Nullable)mtelNo medRmk:(NSString * _Nullable)medRmk addr:(NSString * _Nullable)addr ctyNm:(NSString * _Nullable)ctyNm __attribute__((swift_name("init(refillData:connOrdId:hmpsAddr:phcWest:mtelNo:medRmk:addr:ctyNm:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSRefillDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSRefillDto *)doCopyRefillData:(NSArray<MDSRefillData *> * _Nullable)refillData connORDID:(NSString * _Nullable)connORDID __attribute__((swift_name("doCopy(refillData:connORDID:)")));
+- (MDSRefillDto *)doCopyRefillData:(NSArray<MDSRefillData *> * _Nullable)refillData connOrdId:(NSString * _Nullable)connOrdId hmpsAddr:(NSString * _Nullable)hmpsAddr phcWest:(NSString * _Nullable)phcWest mtelNo:(NSString * _Nullable)mtelNo medRmk:(NSString * _Nullable)medRmk addr:(NSString * _Nullable)addr ctyNm:(NSString * _Nullable)ctyNm __attribute__((swift_name("doCopy(refillData:connOrdId:hmpsAddr:phcWest:mtelNo:medRmk:addr:ctyNm:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
  * @note annotations
+ *   kotlinx.serialization.SerialName(value="addr")
+*/
+@property (readonly) NSString * _Nullable addr __attribute__((swift_name("addr")));
+
+/**
+ * @note annotations
  *   kotlinx.serialization.SerialName(value="conn_ORD_ID")
 */
-@property NSString * _Nullable connORDID __attribute__((swift_name("connORDID")));
+@property (readonly) NSString * _Nullable connOrdId __attribute__((swift_name("connOrdId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="cty_NM")
+*/
+@property (readonly) NSString * _Nullable ctyNm __attribute__((swift_name("ctyNm")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hmps_ADDR")
+*/
+@property (readonly) NSString * _Nullable hmpsAddr __attribute__((swift_name("hmpsAddr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="med_RMK")
+*/
+@property (readonly) NSString * _Nullable medRmk __attribute__((swift_name("medRmk")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="mtel_NO")
+*/
+@property (readonly) NSString * _Nullable mtelNo __attribute__((swift_name("mtelNo")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="phc_WEST")
+*/
+@property (readonly) NSString * _Nullable phcWest __attribute__((swift_name("phcWest")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="refillData")
 */
-@property NSArray<MDSRefillData *> * _Nullable refillData __attribute__((swift_name("refillData")));
+@property (readonly) NSArray<MDSRefillData *> * _Nullable refillData __attribute__((swift_name("refillData")));
 @end
 
 __attribute__((objc_subclassing_restricted))

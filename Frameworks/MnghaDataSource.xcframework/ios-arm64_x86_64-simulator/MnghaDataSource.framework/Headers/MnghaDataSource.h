@@ -7544,24 +7544,54 @@ __attribute__((swift_name("PatientCardItem.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PatientInfo")))
 @interface MDSPatientInfo : MDSBase
-- (instancetype)initWithEnterprisePatientId:(NSString * _Nullable)enterprisePatientId patientId:(NSString * _Nullable)patientId regionCode:(NSString * _Nullable)regionCode patientName:(NSString * _Nullable)patientName birthDay:(NSString * _Nullable)birthDay subRelationTypeName:(NSString * _Nullable)subRelationTypeName __attribute__((swift_name("init(enterprisePatientId:patientId:regionCode:patientName:birthDay:subRelationTypeName:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPatientName:(NSString * _Nullable)patientName patientId:(NSString * _Nullable)patientId relativeTypeCode:(NSString * _Nullable)relativeTypeCode enterprisePatientId:(NSString * _Nullable)enterprisePatientId subRelativeTypeName:(NSString * _Nullable)subRelativeTypeName mainPatientNumber:(NSString * _Nullable)mainPatientNumber birthDate:(NSString * _Nullable)birthDate isDeleted:(NSString * _Nullable)isDeleted groupId:(NSString * _Nullable)groupId expiryDate:(NSString * _Nullable)expiryDate isExpired:(NSString * _Nullable)isExpired __attribute__((swift_name("init(patientName:patientId:relativeTypeCode:enterprisePatientId:subRelativeTypeName:mainPatientNumber:birthDate:isDeleted:groupId:expiryDate:isExpired:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSPatientInfoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSPatientInfo *)doCopyEnterprisePatientId:(NSString * _Nullable)enterprisePatientId patientId:(NSString * _Nullable)patientId regionCode:(NSString * _Nullable)regionCode patientName:(NSString * _Nullable)patientName birthDay:(NSString * _Nullable)birthDay subRelationTypeName:(NSString * _Nullable)subRelationTypeName __attribute__((swift_name("doCopy(enterprisePatientId:patientId:regionCode:patientName:birthDay:subRelationTypeName:)")));
+- (MDSPatientInfo *)doCopyPatientName:(NSString * _Nullable)patientName patientId:(NSString * _Nullable)patientId relativeTypeCode:(NSString * _Nullable)relativeTypeCode enterprisePatientId:(NSString * _Nullable)enterprisePatientId subRelativeTypeName:(NSString * _Nullable)subRelativeTypeName mainPatientNumber:(NSString * _Nullable)mainPatientNumber birthDate:(NSString * _Nullable)birthDate isDeleted:(NSString * _Nullable)isDeleted groupId:(NSString * _Nullable)groupId expiryDate:(NSString * _Nullable)expiryDate isExpired:(NSString * _Nullable)isExpired __attribute__((swift_name("doCopy(patientName:patientId:relativeTypeCode:enterprisePatientId:subRelativeTypeName:mainPatientNumber:birthDate:isDeleted:groupId:expiryDate:isExpired:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="birthDay")
+ *   kotlinx.serialization.SerialName(value="birthDate")
 */
-@property (readonly) NSString * _Nullable birthDay __attribute__((swift_name("birthDay")));
+@property (readonly) NSString * _Nullable birthDate __attribute__((swift_name("birthDate")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="enterprisePatientId")
 */
 @property (readonly) NSString * _Nullable enterprisePatientId __attribute__((swift_name("enterprisePatientId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="expiryDate")
+*/
+@property (readonly) NSString * _Nullable expiryDate __attribute__((swift_name("expiryDate")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="groupId")
+*/
+@property (readonly) NSString * _Nullable groupId __attribute__((swift_name("groupId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="isDeleted")
+*/
+@property (readonly) NSString * _Nullable isDeleted __attribute__((swift_name("isDeleted")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="isExpired")
+*/
+@property (readonly) NSString * _Nullable isExpired __attribute__((swift_name("isExpired")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="mainPatientNumber")
+*/
+@property (readonly) NSString * _Nullable mainPatientNumber __attribute__((swift_name("mainPatientNumber")));
 
 /**
  * @note annotations
@@ -7577,15 +7607,15 @@ __attribute__((swift_name("PatientInfo")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="regionCode")
+ *   kotlinx.serialization.SerialName(value="relativeTypeCode")
 */
-@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
+@property (readonly) NSString * _Nullable relativeTypeCode __attribute__((swift_name("relativeTypeCode")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="subRelationTypeName")
+ *   kotlinx.serialization.SerialName(value="subRelativeTypeName")
 */
-@property (readonly) NSString * _Nullable subRelationTypeName __attribute__((swift_name("subRelationTypeName")));
+@property (readonly) NSString * _Nullable subRelativeTypeName __attribute__((swift_name("subRelativeTypeName")));
 @end
 
 __attribute__((objc_subclassing_restricted))

@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class MDSMnghaDataSourceCompanion, MDSStatusResponse, MDSResponse<T>, MDSAddBodyInfoDto, MDSKotlinArray<T>, MDSAddExerciseInfoDto, MDSAddGrantAccessDto, MDSHealthStatusDto, MDSAddHomeHealthRequestDto, MDSPart, MDSAddPCPMessageDto, MDSRefillDto, MDSAddWearableInfoDto, MDSAdmissionStatusResponse, MDSImageLinks, MDSAppointmentRequestDto, MDSCdStatusItem, MDSPatientProfileResponse, MDSAppointmentTypes, MDSEligibilityResponse, MDSAppointmentCheckTypes, MDSCheckNafathLoginDto, MDSCheckNafathLoginResponse, MDSRegistrationStatus, MDSCheckReportResults, MDSMonthDates, MDSVCareService, MDSCheckVerifyCodeRequest, MDSMedicationReport, MDSCurrentDrugs, MDSDependentItem, MDSKotlinByteArray, MDSPrescriptionResponse, MDSEligibilityListResponse, MDSAdminSurveyStatusResponse, MDSAppointmentCancellationReason, MDSDoctorEntry, MDSAppointmentsAvailableDate, MDSEligibilityResult, MDSHospital, MDSAvailablePhysicianResponse, MDSBodyInfoPeriod2, MDSBodyInfoPeriod, MDSAppointmentDetails, MDSEmrItem, MDSExerciseItem, MDSExerciseDaily, MDSExercisesPeriod, MDSFeedbackResult, MDSNotificationListResult, MDSLastVisit, MDSPHC, MDSPatientAddressResponse, MDSPendingSurvey, MDSRefillMedicationItem, MDSAppointmentRequest, MDSSANGInfo, MDSVirtualCareDepartment, MDSWearableInfo, MDSHealthStatusAfterVisitResponse, MDSHomeHealthResponse, MDSHomeSupplyOrder, MDSSurveyData, MDSLaboratoryFilteredItem, MDSAuthenticationRequest, MDSAuthenticationResponse, MDSModifyAppointmentDto, MDSMyReviewsResponse, MDSNafathLoginDto, MDSNafathLoginResponse, MDSPathologyItem, MDSPatientCardItem, MDSHospitalInfo, MDSRadiologyItem, MDSPatientInfo, MDSReportReason, MDSRequestCDDto, MDSRequestStatusResults, MDSTeleER, MDSRescheduleAppointmentDto, MDSResetPasswordRequest, MDSRetrieveMedicalNumberRequest, MDSSendDoctorMessageDto, MDSSendMyHealthEmailDto, MDSSendVerificationCodeRequest, MDSSpecialClinicItem, MDSSubmitMedicalReportDto, MDSMedicalReportResult, MDSRequestUpdateNBCDto, MDSSubmitSurveyDto, MDSSuggestionFeatureRequest, MDSSurveyServicesResponse, MDSAppInfo, MDSUpdateGrantAccessDto, MDSUpdatePatientProfileInfoRequest, MDSVaccineReminder, MDSVaccianation, MDSvisitHistory, MDSVisitListResponse, MDSKtor_client_coreHttpClient, MDSServerType, MDSRequestData, MDSResponseIOS, MDSDateInfo, MDSKotlinEnumCompanion, MDSKotlinEnum<E>, MDSDurationTime, MDSEndPoints, MDSExerciseType, MDSJsonConstants, MDSQuestionSelfAssessmentArray, MDSPartCompanion, MDSQuestionSelfAssessmentCompanion, MDSQuestionSelfAssessment, MDSQuestionSelfAssessmentArrayCompanion, MDSStartTime, MDSAddBodyInfoDtoCompanion, MDSAddExerciseInfoDtoCompanion, MDSAddGrantAccessDtoCompanion, MDSAddHomeHealthRequestDtoCompanion, MDSAddPCPMessageDtoCompanion, MDSAddWearableInfoDtoCompanion, MDSAppInfoCompanion, MDSAppointmentRequestDtoCompanion, MDSAuthenticationRequestCompanion, MDSCheckNafathLoginDtoCompanion, MDSCheckVerifyCodeRequestCompanion, MDSHealthStatusDtoCompanion, MDSImageLinksCompanion, MDSModifyAppointmentDtoCompanion, MDSNafathLoginDtoCompanion, MDSRefillDataCompanion, MDSRefillData, MDSRefillDtoCompanion, MDSRequestCDDtoCompanion, MDSRequestUpdateNBCDtoCompanion, MDSRescheduleAppointmentDtoCompanion, MDSResetPasswordRequestCompanion, MDSRetrieveMedicalNumberRequestCompanion, MDSSendDoctorMessageDtoCompanion, MDSSendMyHealthEmailDtoCompanion, MDSSendVerificationCodeRequestCompanion, MDSSubmitMedicalReportDtoCompanion, MDSSubmitSurveyDtoCompanion, MDSSuggestionFeatureRequestCompanion, MDSUpdateGrantAccessDtoCompanion, MDSUpdatePatientProfileInfoRequestCompanion, MDSQuestionDetail, MDSAnswer, MDSAdminSurveyStatusResponseCompanion, MDSAdmissionStatusResponseCompanion, MDSAllergyCompanion, MDSAllergy, MDSAnswerCompanion, MDSAppointmentCancellationReasonCompanion, MDSAppointmentDetailsCompanion, MDSAppointmentRequestCompanion, MDSAppointmentServicesTypes, MDSAppointmentsAvailableDateCompanion, MDSAuthenticationResponseCompanion, MDSAvailablePhysicianResponseCompanion, MDSBodyInfoPeriodCompanion, MDSBodyInfoPeriod2Companion, MDSCdStatusItemCompanion, MDSCheckNafathLoginResponseCompanion, MDSCheckReportResultsCompanion, MDSCheckTherapyResponseCompanion, MDSCheckTherapyResponse, MDSCurrentDrugsCompanion, MDSSlot, MDSDateItemCompanion, MDSDateItem, MDSDependentItemCompanion, MDSDoctorEntryCompanion, MDSEligibilityCompanion, MDSEligibility, MDSEligibilityItem, MDSEligibilityApiResponseCompanion, MDSEligibilityApiResponse, MDSEligibilityItemCompanion, MDSUpdateNotBc, MDSEligibilityListResponseCompanion, MDSEligibilityResponseCompanion, MDSEligibilityResultCompanion, MDSEmrItemCompanion, MDSExerciseDailyCompanion, MDSExerciseItemCompanion, MDSExercisesPeriodCompanion, MDSFeedbackResultCompanion, MDSHealthCareResultCompanion, MDSHealthCareResult, MDSHealthStatusAfterVisitResponseCompanion, MDSHomeHealthResponseCompanion, MDSHomeSupplyOrderCompanion, MDSHospitalClinic, MDSHospitalCompanion, MDSHospitalClinicCompanion, MDSHospitalInfoCompanion, MDSHospitalItemCompanion, MDSHospitalItem, MDSTestResultRootCompanion, MDSTestResultRoot, MDSLaboratoryResult, MDSLaboratoryFilteredItemCompanion, MDSLaboratoryItemCompanion, MDSLaboratoryItem, MDSLaboratoryResultCompanion, MDSLastVisitResult, MDSPhy, MDSLastVisitCompanion, MDSLastVisitResultCompanion, MDSLoginResponseCompanion, MDSLoginResponse, MDSMedicalReportResultCompanion, MDSMedicationReportCompanion, MDSMonthDatesCompanion, MDSReview, MDSMyReviewsResponseCompanion, MDSNafathLoginResponseCompanion, MDSNotificationItemCompanion, MDSNotificationItem, MDSNotificationListResultCompanion, MDSPHCCompanion, MDSPathologyItemCompanion, MDSPatientAddressResponseCompanion, MDSPatientCardItemCompanion, MDSPatientInfoCompanion, MDSTipInfo, MDSPatientProfileResponseCompanion, MDSPendingSurveyCompanion, MDSPhyCompanion, MDSPreferredTimeCompanion, MDSPreferredTime, MDSPrescriptionResult, MDSPrescriptionResponseCompanion, MDSPrescriptionResultCompanion, MDSPromotionCompanion, MDSPromotion, MDSQuestionDetailCompanion, MDSRadiologyItemCompanion, MDSRefillMedicationItemCompanion, MDSRegionResponseCompanion, MDSRegionResponse, MDSRegistrationStatusCompanion, MDSReportReasonCompanion, MDSRequestStatusResultsCompanion, MDSResultCompanion, MDSResult, MDSReviewCompanion, MDSSANGInfoCompanion, MDSSlotCompanion, MDSSpecialClinicItemCompanion, MDSStatusResponseCompanion, MDSSurveyDataCompanion, MDSSurveyServicesResponseCompanion, MDSTeleERCompanion, MDSTipInfoCompanion, MDSTipInfoResponseCompanion, MDSTipInfoResponse, MDSUpdateNotBcCompanion, MDSVCareServiceCompanion, MDSVaccianationCompanion, MDSVaccineReminderCompanion, MDSVirtualCareDepartmentCompanion, MDSVisitCompanion, MDSVisit, MDSVisitListResponseCompanion, MDSWearableInfoCompanion, MDSvisitHistoryCompanion, MDSCallBackTypes, MDSMnghaDataSource, MDSApiCaller, NSArray, MDSKotlinPair<__covariant A, __covariant B>, MDSKotlinx_datetimeMonth, MDSKotlinx_datetimeLocalDateCompanion, MDSKotlinx_datetimeLocalDate, MDSKotlinx_datetimeDayOfWeek, MDSKotlinThrowable, MDSKotlinException, MDSKotlinRuntimeException, MDSKotlinIllegalStateException, MDSKotlinByteIterator, MDSKtor_client_coreHttpClientEngineConfig, MDSKtor_client_coreHttpClientConfig<T>, MDSKtor_eventsEvents, MDSKtor_client_coreHttpReceivePipeline, MDSKtor_client_coreHttpRequestPipeline, MDSKtor_client_coreHttpResponsePipeline, MDSKtor_client_coreHttpSendPipeline, MDSKtor_client_coreHttpRequestData, MDSKtor_client_coreHttpResponseData, MDSKotlinx_coroutines_coreCoroutineDispatcher, MDSKtor_client_coreProxyConfig, MDSKtor_utilsAttributeKey<T>, MDSKtor_eventsEventDefinition<T>, MDSKtor_utilsPipelinePhase, MDSKtor_utilsPipeline<TSubject, TContext>, MDSKtor_client_coreHttpReceivePipelinePhases, MDSKtor_client_coreHttpResponse, MDSKotlinUnit, MDSKtor_client_coreHttpRequestPipelinePhases, MDSKtor_client_coreHttpRequestBuilder, MDSKtor_client_coreHttpResponsePipelinePhases, MDSKtor_client_coreHttpResponseContainer, MDSKtor_client_coreHttpClientCall, MDSKtor_client_coreHttpSendPipelinePhases, MDSKotlinx_serialization_coreSerializersModule, MDSKotlinx_serialization_coreSerialKind, MDSKotlinNothing, MDSKtor_httpUrl, MDSKtor_httpHttpMethod, MDSKtor_httpOutgoingContent, MDSKtor_httpHttpStatusCode, MDSKtor_utilsGMTDate, MDSKtor_httpHttpProtocolVersion, MDSKotlinAbstractCoroutineContextElement, MDSKotlinx_coroutines_coreCoroutineDispatcherKey, MDSKtor_httpHeadersBuilder, MDSKtor_client_coreHttpRequestBuilderCompanion, MDSKtor_httpURLBuilder, MDSKtor_utilsTypeInfo, MDSKtor_client_coreHttpClientCallCompanion, MDSKtor_httpUrlCompanion, MDSKtor_httpURLProtocol, MDSKtor_httpHttpMethodCompanion, MDSKtor_httpContentType, MDSKotlinCancellationException, MDSKtor_httpHttpStatusCodeCompanion, MDSKtor_utilsGMTDateCompanion, MDSKtor_utilsWeekDay, MDSKtor_utilsMonth, MDSKtor_httpHttpProtocolVersionCompanion, MDSKotlinAbstractCoroutineContextKey<B, E>, MDSKtor_ioMemory, MDSKtor_ioChunkBuffer, MDSKtor_ioBuffer, MDSKtor_ioByteReadPacket, MDSKtor_utilsStringValuesBuilderImpl, MDSKtor_httpURLBuilderCompanion, MDSKtor_httpURLProtocolCompanion, MDSKtor_httpHeaderValueParam, MDSKtor_httpHeaderValueWithParametersCompanion, MDSKtor_httpHeaderValueWithParameters, MDSKtor_httpContentTypeCompanion, MDSKtor_utilsWeekDayCompanion, MDSKtor_utilsMonthCompanion, MDSKtor_ioMemoryCompanion, MDSKtor_ioBufferCompanion, MDSKtor_ioChunkBufferCompanion, MDSKtor_ioInputCompanion, MDSKtor_ioInput, MDSKtor_ioByteReadPacketCompanion, MDSKotlinKTypeProjection, MDSKotlinKVariance, MDSKotlinKTypeProjectionCompanion;
+@class MDSMnghaDataSourceCompanion, MDSStatusResponse, MDSResponse<T>, MDSAddBodyInfoDto, MDSKotlinArray<T>, MDSAddExerciseInfoDto, MDSAddGrantAccessDto, MDSHealthStatusDto, MDSAddHomeHealthRequestDto, MDSPart, MDSAddNewPatientDto, MDSAddPCPMessageDto, MDSRefillDto, MDSAddWearableInfoDto, MDSAdmissionStatusResponse, MDSImageLinks, MDSAppointmentRequestDto, MDSCdStatusItem, MDSPatientProfileResponse, MDSAppointmentTypes, MDSEligibilityResponse, MDSAppointmentCheckTypes, MDSCheckNafathLoginDto, MDSCheckNafathLoginResponse, MDSCheckNationalIdDto, MDSCheckNationalIdResponse, MDSRegistrationStatus, MDSCheckReportResults, MDSMonthDates, MDSVCareService, MDSCheckVerifyCodeRequest, MDSMedicationReport, MDSCurrentDrugs, MDSDependentItem, MDSKotlinByteArray, MDSPrescriptionResponse, MDSEligibilityListResponse, MDSAdminSurveyStatusResponse, MDSAppointmentCancellationReason, MDSDoctorEntry, MDSAppointmentsAvailableDate, MDSEligibilityResult, MDSHospital, MDSAvailablePhysicianResponse, MDSBodyInfoPeriod2, MDSBodyInfoPeriod, MDSAppointmentDetails, MDSEmrItem, MDSExerciseItem, MDSExerciseDaily, MDSExercisesPeriod, MDSFeedbackResult, MDSNotificationListResult, MDSLastVisit, MDSPHC, MDSPatientAddressResponse, MDSPatientInfoDto, MDSPendingSurvey, MDSRefillMedicationItem, MDSAppointmentRequest, MDSSANGInfo, MDSVirtualCareDepartment, MDSWearableInfo, MDSHealthStatusAfterVisitResponse, MDSHomeHealthResponse, MDSHomeSupplyOrder, MDSSurveyData, MDSLaboratoryFilteredItem, MDSAuthenticationRequest, MDSAuthenticationResponse, MDSModifyAppointmentDto, MDSMyReviewsResponse, MDSNafathLoginDto, MDSNafathLoginResponse, MDSPathologyItem, MDSPatientCardItem, MDSHospitalInfo, MDSRadiologyItem, MDSPatientInfo, MDSReportReason, MDSRequestCDDto, MDSRequestStatusResults, MDSTeleER, MDSRescheduleAppointmentDto, MDSResetPasswordRequest, MDSRetrieveMedicalNumberRequest, MDSSendDoctorMessageDto, MDSSendMyHealthEmailDto, MDSSendVerificationCodeRequest, MDSSpecialClinicItem, MDSSubmitMedicalReportDto, MDSMedicalReportResult, MDSRequestUpdateNBCDto, MDSSubmitSurveyDto, MDSSuggestionFeatureRequest, MDSSurveyServicesResponse, MDSAppInfo, MDSUpdateGrantAccessDto, MDSUpdatePatientProfileInfoRequest, MDSVaccineReminder, MDSVaccianation, MDSvisitHistory, MDSVisitListResponse, MDSKtor_client_coreHttpClient, MDSServerType, MDSRequestData, MDSResponseIOS, MDSDateInfo, MDSKotlinEnumCompanion, MDSKotlinEnum<E>, MDSDurationTime, MDSEndPoints, MDSExerciseType, MDSJsonConstants, MDSQuestionSelfAssessmentArray, MDSPartCompanion, MDSQuestionSelfAssessmentCompanion, MDSQuestionSelfAssessment, MDSQuestionSelfAssessmentArrayCompanion, MDSStartTime, MDSAddBodyInfoDtoCompanion, MDSAddExerciseInfoDtoCompanion, MDSAddGrantAccessDtoCompanion, MDSAddHomeHealthRequestDtoCompanion, MDSAddNewPatientDtoCompanion, MDSAddPCPMessageDtoCompanion, MDSAddWearableInfoDtoCompanion, MDSAppInfoCompanion, MDSAppointmentRequestDtoCompanion, MDSAuthenticationRequestCompanion, MDSCheckNafathLoginDtoCompanion, MDSCheckNationalIdDtoCompanion, MDSCheckVerifyCodeRequestCompanion, MDSHealthStatusDtoCompanion, MDSImageLinksCompanion, MDSModifyAppointmentDtoCompanion, MDSNafathLoginDtoCompanion, MDSPatientInfoDtoCompanion, MDSRefillDataCompanion, MDSRefillData, MDSRefillDtoCompanion, MDSRequestCDDtoCompanion, MDSRequestUpdateNBCDtoCompanion, MDSRescheduleAppointmentDtoCompanion, MDSResetPasswordRequestCompanion, MDSRetrieveMedicalNumberRequestCompanion, MDSSendDoctorMessageDtoCompanion, MDSSendMyHealthEmailDtoCompanion, MDSSendVerificationCodeRequestCompanion, MDSSubmitMedicalReportDtoCompanion, MDSSubmitSurveyDtoCompanion, MDSSuggestionFeatureRequestCompanion, MDSUpdateGrantAccessDtoCompanion, MDSUpdatePatientProfileInfoRequestCompanion, MDSQuestionDetail, MDSAnswer, MDSAdminSurveyStatusResponseCompanion, MDSAdmissionStatusResponseCompanion, MDSAllergyCompanion, MDSAllergy, MDSAnswerCompanion, MDSAppointmentCancellationReasonCompanion, MDSAppointmentDetailsCompanion, MDSAppointmentRequestCompanion, MDSAppointmentServicesTypes, MDSAppointmentsAvailableDateCompanion, MDSAuthenticationResponseCompanion, MDSAvailablePhysicianResponseCompanion, MDSBodyInfoPeriodCompanion, MDSBodyInfoPeriod2Companion, MDSCdStatusItemCompanion, MDSPersonInfoResponse, MDSCheckNafathLoginResponseCompanion, MDSNafathResultItem, MDSCheckNationalIdResponseCompanion, MDSCheckReportResultsCompanion, MDSCheckTherapyResponseCompanion, MDSCheckTherapyResponse, MDSCurrentDrugsCompanion, MDSSlot, MDSDateItemCompanion, MDSDateItem, MDSDependentItemCompanion, MDSDoctorEntryCompanion, MDSEligibilityCompanion, MDSEligibility, MDSEligibilityItem, MDSEligibilityApiResponseCompanion, MDSEligibilityApiResponse, MDSEligibilityItemCompanion, MDSUpdateNotBc, MDSEligibilityListResponseCompanion, MDSEligibilityResponseCompanion, MDSEligibilityResultCompanion, MDSEmrItemCompanion, MDSExerciseDailyCompanion, MDSExerciseItemCompanion, MDSExercisesPeriodCompanion, MDSFeedbackResultCompanion, MDSHealthCareResultCompanion, MDSHealthCareResult, MDSHealthStatusAfterVisitResponseCompanion, MDSHomeHealthResponseCompanion, MDSHomeSupplyOrderCompanion, MDSHospitalClinic, MDSHospitalCompanion, MDSHospitalClinicCompanion, MDSHospitalInfoCompanion, MDSHospitalItemCompanion, MDSHospitalItem, MDSHospitalNafathItemCompanion, MDSHospitalNafathItem, MDSTestResultRootCompanion, MDSTestResultRoot, MDSLaboratoryResult, MDSLaboratoryFilteredItemCompanion, MDSLaboratoryItemCompanion, MDSLaboratoryItem, MDSLaboratoryResultCompanion, MDSLastVisitResult, MDSPhy, MDSLastVisitCompanion, MDSLastVisitResultCompanion, MDSLoginResponseCompanion, MDSLoginResponse, MDSMedicalReportResultCompanion, MDSMedicationReportCompanion, MDSMonthDatesCompanion, MDSReview, MDSMyReviewsResponseCompanion, MDSNafathLoginResponseCompanion, MDSNafathResultItemCompanion, MDSNotificationItemCompanion, MDSNotificationItem, MDSNotificationListResultCompanion, MDSPHCCompanion, MDSPathologyItemCompanion, MDSPatientAddressResponseCompanion, MDSPatientCardItemCompanion, MDSPatientInfoCompanion, MDSTipInfo, MDSPatientProfileResponseCompanion, MDSPendingSurveyCompanion, MDSPersonResult, MDSPersonInfoResponseCompanion, MDSPersonResultCompanion, MDSPhyCompanion, MDSPreferredTimeCompanion, MDSPreferredTime, MDSPrescriptionResult, MDSPrescriptionResponseCompanion, MDSPrescriptionResultCompanion, MDSPromotionCompanion, MDSPromotion, MDSQuestionDetailCompanion, MDSRadiologyItemCompanion, MDSRefillMedicationItemCompanion, MDSRegionResponseCompanion, MDSRegionResponse, MDSRegistrationStatusCompanion, MDSReportReasonCompanion, MDSRequestStatusResultsCompanion, MDSResultCompanion, MDSResult, MDSReviewCompanion, MDSSANGInfoCompanion, MDSSlotCompanion, MDSSpecialClinicItemCompanion, MDSStatusResponseCompanion, MDSSurveyDataCompanion, MDSSurveyServicesResponseCompanion, MDSTeleERCompanion, MDSTipInfoCompanion, MDSTipInfoResponseCompanion, MDSTipInfoResponse, MDSTokenResponseCompanion, MDSTokenResponse, MDSUpdateNotBcCompanion, MDSVCareServiceCompanion, MDSVaccianationCompanion, MDSVaccineReminderCompanion, MDSVirtualCareDepartmentCompanion, MDSVisitCompanion, MDSVisit, MDSVisitListResponseCompanion, MDSWearableInfoCompanion, MDSvisitHistoryCompanion, MDSCallBackTypes, MDSMnghaDataSource, MDSApiCaller, NSArray, MDSKotlinPair<__covariant A, __covariant B>, MDSKotlinx_datetimeMonth, MDSKotlinx_datetimeLocalDateCompanion, MDSKotlinx_datetimeLocalDate, MDSKotlinx_datetimeDayOfWeek, MDSKotlinThrowable, MDSKotlinException, MDSKotlinRuntimeException, MDSKotlinIllegalStateException, MDSKotlinByteIterator, MDSKtor_client_coreHttpClientEngineConfig, MDSKtor_client_coreHttpClientConfig<T>, MDSKtor_eventsEvents, MDSKtor_client_coreHttpReceivePipeline, MDSKtor_client_coreHttpRequestPipeline, MDSKtor_client_coreHttpResponsePipeline, MDSKtor_client_coreHttpSendPipeline, MDSKtor_client_coreHttpRequestData, MDSKtor_client_coreHttpResponseData, MDSKotlinx_coroutines_coreCoroutineDispatcher, MDSKtor_client_coreProxyConfig, MDSKtor_utilsAttributeKey<T>, MDSKtor_eventsEventDefinition<T>, MDSKtor_utilsPipelinePhase, MDSKtor_utilsPipeline<TSubject, TContext>, MDSKtor_client_coreHttpReceivePipelinePhases, MDSKtor_client_coreHttpResponse, MDSKotlinUnit, MDSKtor_client_coreHttpRequestPipelinePhases, MDSKtor_client_coreHttpRequestBuilder, MDSKtor_client_coreHttpResponsePipelinePhases, MDSKtor_client_coreHttpResponseContainer, MDSKtor_client_coreHttpClientCall, MDSKtor_client_coreHttpSendPipelinePhases, MDSKotlinx_serialization_coreSerializersModule, MDSKotlinx_serialization_coreSerialKind, MDSKotlinNothing, MDSKtor_httpUrl, MDSKtor_httpHttpMethod, MDSKtor_httpOutgoingContent, MDSKtor_httpHttpStatusCode, MDSKtor_utilsGMTDate, MDSKtor_httpHttpProtocolVersion, MDSKotlinAbstractCoroutineContextElement, MDSKotlinx_coroutines_coreCoroutineDispatcherKey, MDSKtor_httpHeadersBuilder, MDSKtor_client_coreHttpRequestBuilderCompanion, MDSKtor_httpURLBuilder, MDSKtor_utilsTypeInfo, MDSKtor_client_coreHttpClientCallCompanion, MDSKtor_httpUrlCompanion, MDSKtor_httpURLProtocol, MDSKtor_httpHttpMethodCompanion, MDSKtor_httpContentType, MDSKotlinCancellationException, MDSKtor_httpHttpStatusCodeCompanion, MDSKtor_utilsGMTDateCompanion, MDSKtor_utilsWeekDay, MDSKtor_utilsMonth, MDSKtor_httpHttpProtocolVersionCompanion, MDSKotlinAbstractCoroutineContextKey<B, E>, MDSKtor_ioMemory, MDSKtor_ioChunkBuffer, MDSKtor_ioBuffer, MDSKtor_ioByteReadPacket, MDSKtor_utilsStringValuesBuilderImpl, MDSKtor_httpURLBuilderCompanion, MDSKtor_httpURLProtocolCompanion, MDSKtor_httpHeaderValueParam, MDSKtor_httpHeaderValueWithParametersCompanion, MDSKtor_httpHeaderValueWithParameters, MDSKtor_httpContentTypeCompanion, MDSKtor_utilsWeekDayCompanion, MDSKtor_utilsMonthCompanion, MDSKtor_ioMemoryCompanion, MDSKtor_ioBufferCompanion, MDSKtor_ioChunkBufferCompanion, MDSKtor_ioInputCompanion, MDSKtor_ioInput, MDSKtor_ioByteReadPacketCompanion, MDSKotlinKTypeProjection, MDSKotlinKVariance, MDSKotlinKTypeProjectionCompanion;
 
 @protocol MDSKotlinx_coroutines_coreFlowCollector, MDSKotlinx_coroutines_coreFlow, MDSCloseable, MDSKotlinCoroutineContext, MDSKotlinx_coroutines_coreCoroutineScope, MDSOnApiCalledCompleted, MDSMultiplatform_settingsSettings, MDSKotlinComparable, MDSKotlinx_serialization_coreKSerializer, MDSKotlinIterator, MDSKotlinCoroutineContextElement, MDSKotlinCoroutineContextKey, MDSKtor_ioCloseable, MDSKtor_client_coreHttpClientEngine, MDSKtor_client_coreHttpClientEngineCapability, MDSKtor_utilsAttributes, MDSKotlinx_serialization_coreEncoder, MDSKotlinx_serialization_coreSerialDescriptor, MDSKotlinx_serialization_coreSerializationStrategy, MDSKotlinx_serialization_coreDecoder, MDSKotlinx_serialization_coreDeserializationStrategy, MDSKtor_client_coreHttpClientPlugin, MDSKotlinx_coroutines_coreDisposableHandle, MDSKotlinSuspendFunction2, MDSKotlinx_serialization_coreCompositeEncoder, MDSKotlinAnnotation, MDSKotlinx_serialization_coreCompositeDecoder, MDSKtor_httpHeaders, MDSKotlinx_coroutines_coreJob, MDSKotlinContinuation, MDSKotlinContinuationInterceptor, MDSKotlinx_coroutines_coreRunnable, MDSKotlinFunction, MDSKtor_httpHttpMessage, MDSKtor_ioByteReadChannel, MDSKtor_httpHttpMessageBuilder, MDSKtor_client_coreHttpRequest, MDSKotlinx_serialization_coreSerializersModuleCollector, MDSKotlinKClass, MDSKtor_httpParameters, MDSKotlinMapEntry, MDSKtor_utilsStringValues, MDSKotlinx_coroutines_coreChildHandle, MDSKotlinx_coroutines_coreChildJob, MDSKotlinSequence, MDSKotlinx_coroutines_coreSelectClause0, MDSKtor_ioReadSession, MDSKotlinSuspendFunction1, MDSKotlinAppendable, MDSKtor_utilsStringValuesBuilder, MDSKtor_httpParametersBuilder, MDSKotlinKType, MDSKotlinKDeclarationContainer, MDSKotlinKAnnotatedElement, MDSKotlinKClassifier, MDSKotlinx_coroutines_coreParentJob, MDSKotlinx_coroutines_coreSelectInstance, MDSKotlinx_coroutines_coreSelectClause, MDSKtor_ioObjectPool;
 
@@ -230,6 +230,12 @@ __attribute__((swift_name("MnghaDataSource")))
  * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)addNewPatientBody:(MDSAddNewPatientDto *)body completionHandler:(void (^)(MDSResponse<MDSStatusResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addNewPatient(body:completionHandler:)")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)addPCPMessageBody:(MDSAddPCPMessageDto *)body completionHandler:(void (^)(MDSResponse<MDSStatusResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("addPCPMessage(body:completionHandler:)")));
 
 /**
@@ -315,6 +321,12 @@ __attribute__((swift_name("MnghaDataSource")))
  * Other uncaught Kotlin exceptions are fatal.
 */
 - (void)checkNafathAuthenticationBody:(MDSCheckNafathLoginDto *)body completionHandler:(void (^)(MDSResponse<MDSCheckNafathLoginResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("checkNafathAuthentication(body:completionHandler:)")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)checkNationalIdBody:(MDSCheckNationalIdDto *)body completionHandler:(void (^)(MDSResponse<MDSCheckNationalIdResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("checkNationalId(body:completionHandler:)")));
 
 /**
  * @note This method converts instances of Exception to errors.
@@ -566,6 +578,12 @@ __attribute__((swift_name("MnghaDataSource")))
  * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)getPatientInfoBody:(MDSPatientInfoDto *)body completionHandler:(void (^)(MDSResponse<id> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getPatientInfo(body:completionHandler:)")));
+
+/**
+ * @note This method converts instances of Exception to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)getPatientProfileWithCompletionHandler:(void (^)(MDSResponse<MDSPatientProfileResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getPatientProfile(completionHandler:)")));
 
 /**
@@ -668,7 +686,7 @@ __attribute__((swift_name("MnghaDataSource")))
  * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)nAfathAuthenticateBody:(MDSNafathLoginDto *)body completionHandler:(void (^)(MDSResponse<MDSNafathLoginResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("nAfathAuthenticate(body:completionHandler:)")));
+- (void)nafathAuthenticateBody:(MDSNafathLoginDto *)body completionHandler:(void (^)(MDSResponse<MDSNafathLoginResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("nafathAuthenticate(body:completionHandler:)")));
 
 /**
  * @note This method converts instances of Exception to errors.
@@ -1167,6 +1185,7 @@ __attribute__((swift_name("EndPoints")))
 @property (readonly) NSString *AddHealthStatusAfterVisit __attribute__((swift_name("AddHealthStatusAfterVisit")));
 @property (readonly) NSString *AddHomeHealthRequest __attribute__((swift_name("AddHomeHealthRequest")));
 @property (readonly) NSString *AddNewFeedback __attribute__((swift_name("AddNewFeedback")));
+@property (readonly) NSString *AddNewPatient __attribute__((swift_name("AddNewPatient")));
 @property (readonly) NSString *AddPCPMessage __attribute__((swift_name("AddPCPMessage")));
 @property (readonly) NSString *AddRefillRequest __attribute__((swift_name("AddRefillRequest")));
 @property (readonly) NSString *AddWearableInfo __attribute__((swift_name("AddWearableInfo")));
@@ -1187,6 +1206,7 @@ __attribute__((swift_name("EndPoints")))
 @property (readonly) NSString *CheckAuthentication __attribute__((swift_name("CheckAuthentication")));
 @property (readonly) NSString *CheckEligibility __attribute__((swift_name("CheckEligibility")));
 @property (readonly) NSString *CheckHourForAppointment __attribute__((swift_name("CheckHourForAppointment")));
+@property (readonly) NSString *CheckNationalId __attribute__((swift_name("CheckNationalId")));
 @property (readonly) NSString *CheckPendingAppointmentRequest __attribute__((swift_name("CheckPendingAppointmentRequest")));
 @property (readonly) NSString *CheckRefill __attribute__((swift_name("CheckRefill")));
 @property (readonly) NSString *CheckRegistrationStatus __attribute__((swift_name("CheckRegistrationStatus")));
@@ -1240,6 +1260,7 @@ __attribute__((swift_name("EndPoints")))
 @property (readonly) NSString *ParentSwitchAccount __attribute__((swift_name("ParentSwitchAccount")));
 @property (readonly) NSString *PathologyList __attribute__((swift_name("PathologyList")));
 @property (readonly) NSString *PatientCard __attribute__((swift_name("PatientCard")));
+@property (readonly) NSString *PatientInfo __attribute__((swift_name("PatientInfo")));
 @property (readonly) NSString *PatientProfile __attribute__((swift_name("PatientProfile")));
 @property (readonly) NSString *PreventiveTestList __attribute__((swift_name("PreventiveTestList")));
 @property (readonly) NSString *PrimaryHealthCare __attribute__((swift_name("PrimaryHealthCare")));
@@ -1735,6 +1756,38 @@ __attribute__((swift_name("AddHomeHealthRequestDto.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AddNewPatientDto")))
+@interface MDSAddNewPatientDto : MDSBase
+- (instancetype)initWithDummy:(NSString * _Nullable)dummy __attribute__((swift_name("init(dummy:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSAddNewPatientDtoCompanion *companion __attribute__((swift_name("companion")));
+- (MDSAddNewPatientDto *)doCopyDummy:(NSString * _Nullable)dummy __attribute__((swift_name("doCopy(dummy:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="dummy")
+*/
+@property (readonly) NSString * _Nullable dummy __attribute__((swift_name("dummy")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AddNewPatientDto.Companion")))
+@interface MDSAddNewPatientDtoCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSAddNewPatientDtoCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AddPCPMessageDto")))
 @interface MDSAddPCPMessageDto : MDSBase
 - (instancetype)initWithHospitalCode:(NSString * _Nullable)hospitalCode bodyInfoId:(MDSInt * _Nullable)bodyInfoId msgCnt:(NSString * _Nullable)msgCnt __attribute__((swift_name("init(hospitalCode:bodyInfoId:msgCnt:)"))) __attribute__((objc_designated_initializer));
@@ -2179,6 +2232,44 @@ __attribute__((swift_name("CheckNafathLoginDto.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CheckNationalIdDto")))
+@interface MDSCheckNationalIdDto : MDSBase
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:deviceType:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSCheckNationalIdDtoCompanion *companion __attribute__((swift_name("companion")));
+- (MDSCheckNationalIdDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:deviceType:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="deviceType")
+*/
+@property (readonly) NSString * _Nullable deviceType __attribute__((swift_name("deviceType")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="nationalID")
+*/
+@property (readonly) NSString * _Nullable nationalID __attribute__((swift_name("nationalID")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CheckNationalIdDto.Companion")))
+@interface MDSCheckNationalIdDtoCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSCheckNationalIdDtoCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CheckVerifyCodeRequest")))
 @interface MDSCheckVerifyCodeRequest : MDSBase
 - (instancetype)initWithVerificationCode:(int32_t)verificationCode __attribute__((swift_name("init(verificationCode:)"))) __attribute__((objc_designated_initializer));
@@ -2498,6 +2589,50 @@ __attribute__((swift_name("NafathLoginDto.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) MDSNafathLoginDtoCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PatientInfoDto")))
+@interface MDSPatientInfoDto : MDSBase
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID regionCode:(NSString * _Nullable)regionCode deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:regionCode:deviceType:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSPatientInfoDtoCompanion *companion __attribute__((swift_name("companion")));
+- (MDSPatientInfoDto *)doCopyNationalID:(NSString * _Nullable)nationalID regionCode:(NSString * _Nullable)regionCode deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:regionCode:deviceType:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="deviceType")
+*/
+@property (readonly) NSString * _Nullable deviceType __attribute__((swift_name("deviceType")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="nationalID")
+*/
+@property (readonly) NSString * _Nullable nationalID __attribute__((swift_name("nationalID")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="regionCode")
+*/
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PatientInfoDto.Companion")))
+@interface MDSPatientInfoDtoCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSPatientInfoDtoCompanion *shared __attribute__((swift_name("shared")));
 - (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -4721,9 +4856,9 @@ __attribute__((swift_name("CdStatusItem.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CheckNafathLoginResponse")))
 @interface MDSCheckNafathLoginResponse : MDSBase
-- (instancetype)initWithStatus:(NSString * _Nullable)status errorCode:(NSString * _Nullable)errorCode personId:(NSString * _Nullable)personId message:(NSString * _Nullable)message __attribute__((swift_name("init(status:errorCode:personId:message:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithStatus:(NSString * _Nullable)status errorCode:(NSString * _Nullable)errorCode personId:(NSString * _Nullable)personId message:(NSString * _Nullable)message personInfoResponse:(MDSPersonInfoResponse * _Nullable)personInfoResponse __attribute__((swift_name("init(status:errorCode:personId:message:personInfoResponse:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSCheckNafathLoginResponseCompanion *companion __attribute__((swift_name("companion")));
-- (MDSCheckNafathLoginResponse *)doCopyStatus:(NSString * _Nullable)status errorCode:(NSString * _Nullable)errorCode personId:(NSString * _Nullable)personId message:(NSString * _Nullable)message __attribute__((swift_name("doCopy(status:errorCode:personId:message:)")));
+- (MDSCheckNafathLoginResponse *)doCopyStatus:(NSString * _Nullable)status errorCode:(NSString * _Nullable)errorCode personId:(NSString * _Nullable)personId message:(NSString * _Nullable)message personInfoResponse:(MDSPersonInfoResponse * _Nullable)personInfoResponse __attribute__((swift_name("doCopy(status:errorCode:personId:message:personInfoResponse:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -4748,6 +4883,12 @@ __attribute__((swift_name("CheckNafathLoginResponse")))
 
 /**
  * @note annotations
+ *   kotlinx.serialization.SerialName(value="personInfoResponse")
+*/
+@property (readonly) MDSPersonInfoResponse * _Nullable personInfoResponse __attribute__((swift_name("personInfoResponse")));
+
+/**
+ * @note annotations
  *   kotlinx.serialization.SerialName(value="status")
 */
 @property (readonly) NSString * _Nullable status __attribute__((swift_name("status")));
@@ -4760,6 +4901,62 @@ __attribute__((swift_name("CheckNafathLoginResponse.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) MDSCheckNafathLoginResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CheckNationalIdResponse")))
+@interface MDSCheckNationalIdResponse : MDSBase
+- (instancetype)initWithExist:(NSString * _Nullable)exist sso:(NSString * _Nullable)sso result:(NSArray<MDSNafathResultItem *> * _Nullable)result message:(NSString * _Nullable)message token:(NSString * _Nullable)token __attribute__((swift_name("init(exist:sso:result:message:token:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSCheckNationalIdResponseCompanion *companion __attribute__((swift_name("companion")));
+- (MDSCheckNationalIdResponse *)doCopyExist:(NSString * _Nullable)exist sso:(NSString * _Nullable)sso result:(NSArray<MDSNafathResultItem *> * _Nullable)result message:(NSString * _Nullable)message token:(NSString * _Nullable)token __attribute__((swift_name("doCopy(exist:sso:result:message:token:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="exist")
+*/
+@property (readonly) NSString * _Nullable exist __attribute__((swift_name("exist")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="message")
+*/
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="result")
+*/
+@property (readonly) NSArray<MDSNafathResultItem *> * _Nullable result __attribute__((swift_name("result")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="sso")
+*/
+@property (readonly) NSString * _Nullable sso __attribute__((swift_name("sso")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="token")
+*/
+@property (readonly) NSString * _Nullable token __attribute__((swift_name("token")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("CheckNationalIdResponse.Companion")))
+@interface MDSCheckNationalIdResponseCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSCheckNationalIdResponseCompanion *shared __attribute__((swift_name("shared")));
 - (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -6419,6 +6616,50 @@ __attribute__((swift_name("HospitalItem.Companion")))
  * @note annotations
  *   kotlinx.serialization.Serializable
 */
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HospitalNafathItem")))
+@interface MDSHospitalNafathItem : MDSBase
+- (instancetype)initWithHospitalCode:(NSString * _Nullable)hospitalCode hospitalName:(NSString * _Nullable)hospitalName localHospitalName:(NSString * _Nullable)localHospitalName __attribute__((swift_name("init(hospitalCode:hospitalName:localHospitalName:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSHospitalNafathItemCompanion *companion __attribute__((swift_name("companion")));
+- (MDSHospitalNafathItem *)doCopyHospitalCode:(NSString * _Nullable)hospitalCode hospitalName:(NSString * _Nullable)hospitalName localHospitalName:(NSString * _Nullable)localHospitalName __attribute__((swift_name("doCopy(hospitalCode:hospitalName:localHospitalName:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hospitalCode")
+*/
+@property (readonly) NSString * _Nullable hospitalCode __attribute__((swift_name("hospitalCode")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hospitalName")
+*/
+@property (readonly) NSString * _Nullable hospitalName __attribute__((swift_name("hospitalName")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="localHospitalName")
+*/
+@property (readonly) NSString * _Nullable localHospitalName __attribute__((swift_name("localHospitalName")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("HospitalNafathItem.Companion")))
+@interface MDSHospitalNafathItemCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSHospitalNafathItemCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
 __attribute__((swift_name("TestResultRoot")))
 @interface MDSTestResultRoot : MDSBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
@@ -7068,6 +7309,80 @@ __attribute__((swift_name("NafathLoginResponse.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) MDSNafathLoginResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("NafathResultItem")))
+@interface MDSNafathResultItem : MDSBase
+- (instancetype)initWithCommonCodeName:(NSString * _Nullable)commonCodeName enterprisePatientId:(NSString * _Nullable)enterprisePatientId existFlag:(NSString * _Nullable)existFlag arabicPatientName:(NSString * _Nullable)arabicPatientName regionCode:(NSString * _Nullable)regionCode englishPatientName:(NSString * _Nullable)englishPatientName patientId:(NSString * _Nullable)patientId mobileNumber:(NSString * _Nullable)mobileNumber __attribute__((swift_name("init(commonCodeName:enterprisePatientId:existFlag:arabicPatientName:regionCode:englishPatientName:patientId:mobileNumber:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSNafathResultItemCompanion *companion __attribute__((swift_name("companion")));
+- (MDSNafathResultItem *)doCopyCommonCodeName:(NSString * _Nullable)commonCodeName enterprisePatientId:(NSString * _Nullable)enterprisePatientId existFlag:(NSString * _Nullable)existFlag arabicPatientName:(NSString * _Nullable)arabicPatientName regionCode:(NSString * _Nullable)regionCode englishPatientName:(NSString * _Nullable)englishPatientName patientId:(NSString * _Nullable)patientId mobileNumber:(NSString * _Nullable)mobileNumber __attribute__((swift_name("doCopy(commonCodeName:enterprisePatientId:existFlag:arabicPatientName:regionCode:englishPatientName:patientId:mobileNumber:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="arabicPatientName")
+*/
+@property (readonly) NSString * _Nullable arabicPatientName __attribute__((swift_name("arabicPatientName")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="commonCodeName")
+*/
+@property (readonly) NSString * _Nullable commonCodeName __attribute__((swift_name("commonCodeName")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="englishPatientName")
+*/
+@property (readonly) NSString * _Nullable englishPatientName __attribute__((swift_name("englishPatientName")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="enterprisePatientId")
+*/
+@property (readonly) NSString * _Nullable enterprisePatientId __attribute__((swift_name("enterprisePatientId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="existFlag")
+*/
+@property (readonly) NSString * _Nullable existFlag __attribute__((swift_name("existFlag")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="mobileNumber")
+*/
+@property (readonly) NSString * _Nullable mobileNumber __attribute__((swift_name("mobileNumber")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="patientId")
+*/
+@property (readonly) NSString * _Nullable patientId __attribute__((swift_name("patientId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="regionCode")
+*/
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("NafathResultItem.Companion")))
+@interface MDSNafathResultItemCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSNafathResultItemCompanion *shared __attribute__((swift_name("shared")));
 - (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -8076,6 +8391,256 @@ __attribute__((swift_name("PendingSurvey.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) MDSPendingSurveyCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PersonInfoResponse")))
+@interface MDSPersonInfoResponse : MDSBase
+- (instancetype)initWithMessage:(NSString * _Nullable)message result:(NSArray<MDSPersonResult *> * _Nullable)result __attribute__((swift_name("init(message:result:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSPersonInfoResponseCompanion *companion __attribute__((swift_name("companion")));
+- (MDSPersonInfoResponse *)doCopyMessage:(NSString * _Nullable)message result:(NSArray<MDSPersonResult *> * _Nullable)result __attribute__((swift_name("doCopy(message:result:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="message")
+*/
+@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="result")
+*/
+@property (readonly) NSArray<MDSPersonResult *> * _Nullable result __attribute__((swift_name("result")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PersonInfoResponse.Companion")))
+@interface MDSPersonInfoResponseCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSPersonInfoResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PersonResult")))
+@interface MDSPersonResult : MDSBase
+- (instancetype)initWithFirstNameAr:(NSString * _Nullable)firstNameAr fatherNameAr:(NSString * _Nullable)fatherNameAr grandFatherNameAr:(NSString * _Nullable)grandFatherNameAr familyNameAr:(NSString * _Nullable)familyNameAr firstNameEn:(NSString * _Nullable)firstNameEn fatherNameEn:(NSString * _Nullable)fatherNameEn grandFatherNameEn:(NSString * _Nullable)grandFatherNameEn familyNameEn:(NSString * _Nullable)familyNameEn birthCityAr:(NSString * _Nullable)birthCityAr birthDate:(NSString * _Nullable)birthDate age:(MDSInt * _Nullable)age sonOver23:(NSString * _Nullable)sonOver23 sexCode:(NSString * _Nullable)sexCode sexDescArabic:(NSString * _Nullable)sexDescArabic sexDescEnglish:(NSString * _Nullable)sexDescEnglish maritalStatusDescAr:(NSString * _Nullable)maritalStatusDescAr maritalStatusDescEn:(NSString * _Nullable)maritalStatusDescEn nationalityCode:(NSString * _Nullable)nationalityCode maritalStatusCode:(NSString * _Nullable)maritalStatusCode cityNameAr:(NSString * _Nullable)cityNameAr cityNameEn:(NSString * _Nullable)cityNameEn districtAreaAr:(NSString * _Nullable)districtAreaAr districtAreaEn:(NSString * _Nullable)districtAreaEn zipCode:(NSString * _Nullable)zipCode unitNumber:(NSString * _Nullable)unitNumber additionalNumber:(NSString * _Nullable)additionalNumber buildingNumber:(NSString * _Nullable)buildingNumber streetNameAr:(NSString * _Nullable)streetNameAr streetNameEn:(NSString * _Nullable)streetNameEn hospitalsList:(NSArray<MDSHospitalNafathItem *> * _Nullable)hospitalsList idexpirationDate:(NSString * _Nullable)idexpirationDate __attribute__((swift_name("init(firstNameAr:fatherNameAr:grandFatherNameAr:familyNameAr:firstNameEn:fatherNameEn:grandFatherNameEn:familyNameEn:birthCityAr:birthDate:age:sonOver23:sexCode:sexDescArabic:sexDescEnglish:maritalStatusDescAr:maritalStatusDescEn:nationalityCode:maritalStatusCode:cityNameAr:cityNameEn:districtAreaAr:districtAreaEn:zipCode:unitNumber:additionalNumber:buildingNumber:streetNameAr:streetNameEn:hospitalsList:idexpirationDate:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSPersonResultCompanion *companion __attribute__((swift_name("companion")));
+- (MDSPersonResult *)doCopyFirstNameAr:(NSString * _Nullable)firstNameAr fatherNameAr:(NSString * _Nullable)fatherNameAr grandFatherNameAr:(NSString * _Nullable)grandFatherNameAr familyNameAr:(NSString * _Nullable)familyNameAr firstNameEn:(NSString * _Nullable)firstNameEn fatherNameEn:(NSString * _Nullable)fatherNameEn grandFatherNameEn:(NSString * _Nullable)grandFatherNameEn familyNameEn:(NSString * _Nullable)familyNameEn birthCityAr:(NSString * _Nullable)birthCityAr birthDate:(NSString * _Nullable)birthDate age:(MDSInt * _Nullable)age sonOver23:(NSString * _Nullable)sonOver23 sexCode:(NSString * _Nullable)sexCode sexDescArabic:(NSString * _Nullable)sexDescArabic sexDescEnglish:(NSString * _Nullable)sexDescEnglish maritalStatusDescAr:(NSString * _Nullable)maritalStatusDescAr maritalStatusDescEn:(NSString * _Nullable)maritalStatusDescEn nationalityCode:(NSString * _Nullable)nationalityCode maritalStatusCode:(NSString * _Nullable)maritalStatusCode cityNameAr:(NSString * _Nullable)cityNameAr cityNameEn:(NSString * _Nullable)cityNameEn districtAreaAr:(NSString * _Nullable)districtAreaAr districtAreaEn:(NSString * _Nullable)districtAreaEn zipCode:(NSString * _Nullable)zipCode unitNumber:(NSString * _Nullable)unitNumber additionalNumber:(NSString * _Nullable)additionalNumber buildingNumber:(NSString * _Nullable)buildingNumber streetNameAr:(NSString * _Nullable)streetNameAr streetNameEn:(NSString * _Nullable)streetNameEn hospitalsList:(NSArray<MDSHospitalNafathItem *> * _Nullable)hospitalsList idexpirationDate:(NSString * _Nullable)idexpirationDate __attribute__((swift_name("doCopy(firstNameAr:fatherNameAr:grandFatherNameAr:familyNameAr:firstNameEn:fatherNameEn:grandFatherNameEn:familyNameEn:birthCityAr:birthDate:age:sonOver23:sexCode:sexDescArabic:sexDescEnglish:maritalStatusDescAr:maritalStatusDescEn:nationalityCode:maritalStatusCode:cityNameAr:cityNameEn:districtAreaAr:districtAreaEn:zipCode:unitNumber:additionalNumber:buildingNumber:streetNameAr:streetNameEn:hospitalsList:idexpirationDate:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="additionalNumber")
+*/
+@property (readonly) NSString * _Nullable additionalNumber __attribute__((swift_name("additionalNumber")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="age")
+*/
+@property (readonly) MDSInt * _Nullable age __attribute__((swift_name("age")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="birthCityAr")
+*/
+@property (readonly) NSString * _Nullable birthCityAr __attribute__((swift_name("birthCityAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="birthDate")
+*/
+@property (readonly) NSString * _Nullable birthDate __attribute__((swift_name("birthDate")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="buildingNumber")
+*/
+@property (readonly) NSString * _Nullable buildingNumber __attribute__((swift_name("buildingNumber")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="cityNameAr")
+*/
+@property (readonly) NSString * _Nullable cityNameAr __attribute__((swift_name("cityNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="cityNameEn")
+*/
+@property (readonly) NSString * _Nullable cityNameEn __attribute__((swift_name("cityNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="districtAreaAr")
+*/
+@property (readonly) NSString * _Nullable districtAreaAr __attribute__((swift_name("districtAreaAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="districtAreaEn")
+*/
+@property (readonly) NSString * _Nullable districtAreaEn __attribute__((swift_name("districtAreaEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="familyNameAr")
+*/
+@property (readonly) NSString * _Nullable familyNameAr __attribute__((swift_name("familyNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="familyNameEn")
+*/
+@property (readonly) NSString * _Nullable familyNameEn __attribute__((swift_name("familyNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="fatherNameAr")
+*/
+@property (readonly) NSString * _Nullable fatherNameAr __attribute__((swift_name("fatherNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="fatherNameEn")
+*/
+@property (readonly) NSString * _Nullable fatherNameEn __attribute__((swift_name("fatherNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="firstNameAr")
+*/
+@property (readonly) NSString * _Nullable firstNameAr __attribute__((swift_name("firstNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="firstNameEn")
+*/
+@property (readonly) NSString * _Nullable firstNameEn __attribute__((swift_name("firstNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="grandFatherNameAr")
+*/
+@property (readonly) NSString * _Nullable grandFatherNameAr __attribute__((swift_name("grandFatherNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="grandFatherNameEn")
+*/
+@property (readonly) NSString * _Nullable grandFatherNameEn __attribute__((swift_name("grandFatherNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="hospitalsList")
+*/
+@property (readonly) NSArray<MDSHospitalNafathItem *> * _Nullable hospitalsList __attribute__((swift_name("hospitalsList")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="idexpirationDate")
+*/
+@property (readonly) NSString * _Nullable idexpirationDate __attribute__((swift_name("idexpirationDate")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="maritalStatusCode")
+*/
+@property (readonly) NSString * _Nullable maritalStatusCode __attribute__((swift_name("maritalStatusCode")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="maritalStatusDescAr")
+*/
+@property (readonly) NSString * _Nullable maritalStatusDescAr __attribute__((swift_name("maritalStatusDescAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="maritalStatusDescEn")
+*/
+@property (readonly) NSString * _Nullable maritalStatusDescEn __attribute__((swift_name("maritalStatusDescEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="nationalityCode")
+*/
+@property (readonly) NSString * _Nullable nationalityCode __attribute__((swift_name("nationalityCode")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="sexCode")
+*/
+@property (readonly) NSString * _Nullable sexCode __attribute__((swift_name("sexCode")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="sexDescArabic")
+*/
+@property (readonly) NSString * _Nullable sexDescArabic __attribute__((swift_name("sexDescArabic")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="sexDescEnglish")
+*/
+@property (readonly) NSString * _Nullable sexDescEnglish __attribute__((swift_name("sexDescEnglish")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="sonOver23")
+*/
+@property (readonly) NSString * _Nullable sonOver23 __attribute__((swift_name("sonOver23")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="streetNameAr")
+*/
+@property (readonly) NSString * _Nullable streetNameAr __attribute__((swift_name("streetNameAr")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="streetNameEn")
+*/
+@property (readonly) NSString * _Nullable streetNameEn __attribute__((swift_name("streetNameEn")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="unitNumber")
+*/
+@property (readonly) NSString * _Nullable unitNumber __attribute__((swift_name("unitNumber")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="zipCode")
+*/
+@property (readonly) NSString * _Nullable zipCode __attribute__((swift_name("zipCode")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("PersonResult.Companion")))
+@interface MDSPersonResultCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSPersonResultCompanion *shared __attribute__((swift_name("shared")));
 - (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -9860,6 +10425,38 @@ __attribute__((swift_name("TipInfoResponse.Companion")))
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) MDSTipInfoResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TokenResponse")))
+@interface MDSTokenResponse : MDSBase
+- (instancetype)initWithToken:(NSString * _Nullable)token __attribute__((swift_name("init(token:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) MDSTokenResponseCompanion *companion __attribute__((swift_name("companion")));
+- (MDSTokenResponse *)doCopyToken:(NSString * _Nullable)token __attribute__((swift_name("doCopy(token:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="token")
+*/
+@property (readonly) NSString * _Nullable token __attribute__((swift_name("token")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("TokenResponse.Companion")))
+@interface MDSTokenResponseCompanion : MDSBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) MDSTokenResponseCompanion *shared __attribute__((swift_name("shared")));
 - (id<MDSKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 

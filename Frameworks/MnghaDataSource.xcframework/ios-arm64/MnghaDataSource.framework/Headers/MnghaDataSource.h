@@ -2190,12 +2190,18 @@ __attribute__((swift_name("AuthenticationRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CheckNafathLoginDto")))
 @interface MDSCheckNafathLoginDto : MDSBase
-- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random __attribute__((swift_name("init(nationalID:transferID:random:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:transferID:random:deviceType:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSCheckNafathLoginDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSCheckNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random __attribute__((swift_name("doCopy(nationalID:transferID:random:)")));
+- (MDSCheckNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:transferID:random:deviceType:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="deviceType")
+*/
+@property (readonly) NSString * _Nullable deviceType __attribute__((swift_name("deviceType")));
 
 /**
  * @note annotations
@@ -2568,12 +2574,18 @@ __attribute__((swift_name("ModifyAppointmentDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NafathLoginDto")))
 @interface MDSNafathLoginDto : MDSBase
-- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID __attribute__((swift_name("init(nationalID:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:deviceType:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSNafathLoginDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID __attribute__((swift_name("doCopy(nationalID:)")));
+- (MDSNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:deviceType:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="deviceType")
+*/
+@property (readonly) NSString * _Nullable deviceType __attribute__((swift_name("deviceType")));
 
 /**
  * @note annotations

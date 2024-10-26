@@ -4935,19 +4935,19 @@ __attribute__((swift_name("CheckNationalIdResponse")))
  * @note annotations
  *   kotlinx.serialization.SerialName(value="exist")
 */
-@property (readonly) NSString * _Nullable exist __attribute__((swift_name("exist")));
+@property NSString * _Nullable exist __attribute__((swift_name("exist")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="message")
 */
-@property (readonly) NSString * _Nullable message __attribute__((swift_name("message")));
+@property NSString * _Nullable message __attribute__((swift_name("message")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="sso")
 */
-@property (readonly) NSString * _Nullable sso __attribute__((swift_name("sso")));
+@property NSString * _Nullable sso __attribute__((swift_name("sso")));
 
 /**
  * @note annotations

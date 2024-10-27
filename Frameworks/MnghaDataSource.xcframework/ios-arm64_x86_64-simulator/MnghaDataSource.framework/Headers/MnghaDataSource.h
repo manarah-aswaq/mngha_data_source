@@ -7157,9 +7157,9 @@ __attribute__((swift_name("MedicalReportResult.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("MedicationReport")))
 @interface MDSMedicationReport : MDSBase
-- (instancetype)initWithPactId:(NSString * _Nullable)pactId medicationDate:(NSString * _Nullable)medicationDate hijriDate:(NSString * _Nullable)hijriDate mdfmClsDtlCdNm:(NSString * _Nullable)mdfmClsDtlCdNm mdrcId:(MDSInt * _Nullable)mdrcId mdfmClsDtlCd:(NSString * _Nullable)mdfmClsDtlCd mdfmClsDtlCdNmAr:(NSString * _Nullable)mdfmClsDtlCdNmAr __attribute__((swift_name("init(pactId:medicationDate:hijriDate:mdfmClsDtlCdNm:mdrcId:mdfmClsDtlCd:mdfmClsDtlCdNmAr:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPactId:(NSString * _Nullable)pactId medicationDate:(NSString * _Nullable)medicationDate reportType:(NSString * _Nullable)reportType hijriDate:(NSString * _Nullable)hijriDate mdrcId:(MDSInt * _Nullable)mdrcId mdfmClsDtlCdNm:(NSString * _Nullable)mdfmClsDtlCdNm mdfmClsDtlCdNmAr:(NSString * _Nullable)mdfmClsDtlCdNmAr __attribute__((swift_name("init(pactId:medicationDate:reportType:hijriDate:mdrcId:mdfmClsDtlCdNm:mdfmClsDtlCdNmAr:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSMedicationReportCompanion *companion __attribute__((swift_name("companion")));
-- (MDSMedicationReport *)doCopyPactId:(NSString * _Nullable)pactId medicationDate:(NSString * _Nullable)medicationDate hijriDate:(NSString * _Nullable)hijriDate mdfmClsDtlCdNm:(NSString * _Nullable)mdfmClsDtlCdNm mdrcId:(MDSInt * _Nullable)mdrcId mdfmClsDtlCd:(NSString * _Nullable)mdfmClsDtlCd mdfmClsDtlCdNmAr:(NSString * _Nullable)mdfmClsDtlCdNmAr __attribute__((swift_name("doCopy(pactId:medicationDate:hijriDate:mdfmClsDtlCdNm:mdrcId:mdfmClsDtlCd:mdfmClsDtlCdNmAr:)")));
+- (MDSMedicationReport *)doCopyPactId:(NSString * _Nullable)pactId medicationDate:(NSString * _Nullable)medicationDate reportType:(NSString * _Nullable)reportType hijriDate:(NSString * _Nullable)hijriDate mdrcId:(MDSInt * _Nullable)mdrcId mdfmClsDtlCdNm:(NSString * _Nullable)mdfmClsDtlCdNm mdfmClsDtlCdNmAr:(NSString * _Nullable)mdfmClsDtlCdNmAr __attribute__((swift_name("doCopy(pactId:medicationDate:reportType:hijriDate:mdrcId:mdfmClsDtlCdNm:mdfmClsDtlCdNmAr:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -7169,12 +7169,6 @@ __attribute__((swift_name("MedicationReport")))
  *   kotlinx.serialization.SerialName(value="hijriDate")
 */
 @property (readonly) NSString * _Nullable hijriDate __attribute__((swift_name("hijriDate")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="mdfm_CLS_DTL_CD")
-*/
-@property (readonly) NSString * _Nullable mdfmClsDtlCd __attribute__((swift_name("mdfmClsDtlCd")));
 
 /**
  * @note annotations
@@ -7205,6 +7199,12 @@ __attribute__((swift_name("MedicationReport")))
  *   kotlinx.serialization.SerialName(value="pactId")
 */
 @property (readonly) NSString * _Nullable pactId __attribute__((swift_name("pactId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="reportType")
+*/
+@property (readonly) NSString * _Nullable reportType __attribute__((swift_name("reportType")));
 @end
 
 __attribute__((objc_subclassing_restricted))

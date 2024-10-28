@@ -2190,9 +2190,9 @@ __attribute__((swift_name("AuthenticationRequest.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CheckNafathLoginDto")))
 @interface MDSCheckNafathLoginDto : MDSBase
-- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:transferID:random:deviceType:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("init(nationalID:transferID:random:deviceType:regionCode:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSCheckNafathLoginDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSCheckNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:transferID:random:deviceType:)")));
+- (MDSCheckNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID transferID:(NSString * _Nullable)transferID random:(NSString * _Nullable)random deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("doCopy(nationalID:transferID:random:deviceType:regionCode:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -2214,6 +2214,12 @@ __attribute__((swift_name("CheckNafathLoginDto")))
  *   kotlinx.serialization.SerialName(value="random")
 */
 @property (readonly) NSString * _Nullable random __attribute__((swift_name("random")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="regionCode")
+*/
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
 
 /**
  * @note annotations
@@ -2240,9 +2246,9 @@ __attribute__((swift_name("CheckNafathLoginDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("CheckNationalIdDto")))
 @interface MDSCheckNationalIdDto : MDSBase
-- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:deviceType:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("init(nationalID:deviceType:regionCode:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSCheckNationalIdDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSCheckNationalIdDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:deviceType:)")));
+- (MDSCheckNationalIdDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("doCopy(nationalID:deviceType:regionCode:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -2258,6 +2264,12 @@ __attribute__((swift_name("CheckNationalIdDto")))
  *   kotlinx.serialization.SerialName(value="nationalID")
 */
 @property (readonly) NSString * _Nullable nationalID __attribute__((swift_name("nationalID")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="regionCode")
+*/
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
 @end
 
 __attribute__((objc_subclassing_restricted))
@@ -2574,9 +2586,9 @@ __attribute__((swift_name("ModifyAppointmentDto.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("NafathLoginDto")))
 @interface MDSNafathLoginDto : MDSBase
-- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("init(nationalID:deviceType:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("init(nationalID:deviceType:regionCode:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSNafathLoginDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType __attribute__((swift_name("doCopy(nationalID:deviceType:)")));
+- (MDSNafathLoginDto *)doCopyNationalID:(NSString * _Nullable)nationalID deviceType:(NSString * _Nullable)deviceType regionCode:(NSString * _Nullable)regionCode __attribute__((swift_name("doCopy(nationalID:deviceType:regionCode:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -2592,6 +2604,12 @@ __attribute__((swift_name("NafathLoginDto")))
  *   kotlinx.serialization.SerialName(value="nationalID")
 */
 @property (readonly) NSString * _Nullable nationalID __attribute__((swift_name("nationalID")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="regionCode")
+*/
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
 @end
 
 __attribute__((objc_subclassing_restricted))

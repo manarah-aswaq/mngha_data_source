@@ -5764,7 +5764,7 @@ __attribute__((swift_name("EligibilityResponse")))
 - (MDSEligibilityResponse *)doCopyItems:(MDSKotlinArray<MDSEligibilityResult *> * _Nullable)items __attribute__((swift_name("doCopy(items:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (void)doInitData:(MDSEligibilityApiResponse * _Nullable)data __attribute__((swift_name("doInit(data:)")));
+- (void)doInitData:(MDSEligibilityApiResponse * _Nullable)data isVip:(BOOL)isVip __attribute__((swift_name("doInit(data:isVip:)")));
 - (NSString *)description __attribute__((swift_name("description()")));
 @property MDSKotlinArray<MDSEligibilityResult *> * _Nullable items __attribute__((swift_name("items")));
 @end
@@ -6709,16 +6709,16 @@ __attribute__((swift_name("TestResultRoot")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LaboratoryFilteredItem")))
 @interface MDSLaboratoryFilteredItem : MDSTestResultRoot
-- (instancetype)initWithHijriBRFG_DTM:(NSString * _Nullable)hijriBRFG_DTM resultReportingDate:(NSString * _Nullable)resultReportingDate hospitalCode:(NSString * _Nullable)hospitalCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName results:(MDSKotlinArray<MDSLaboratoryResult *> * _Nullable)results __attribute__((swift_name("init(hijriBRFG_DTM:resultReportingDate:hospitalCode:testClassificationName:testClassificationArabicName:results:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithHijriDate:(NSString * _Nullable)hijriDate resultReportingDate:(NSString * _Nullable)resultReportingDate hospitalCode:(NSString * _Nullable)hospitalCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName results:(MDSKotlinArray<MDSLaboratoryResult *> * _Nullable)results __attribute__((swift_name("init(hijriDate:resultReportingDate:hospitalCode:testClassificationName:testClassificationArabicName:results:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) MDSLaboratoryFilteredItemCompanion *companion __attribute__((swift_name("companion")));
-- (MDSLaboratoryFilteredItem *)doCopyHijriBRFG_DTM:(NSString * _Nullable)hijriBRFG_DTM resultReportingDate:(NSString * _Nullable)resultReportingDate hospitalCode:(NSString * _Nullable)hospitalCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName results:(MDSKotlinArray<MDSLaboratoryResult *> * _Nullable)results __attribute__((swift_name("doCopy(hijriBRFG_DTM:resultReportingDate:hospitalCode:testClassificationName:testClassificationArabicName:results:)")));
+- (MDSLaboratoryFilteredItem *)doCopyHijriDate:(NSString * _Nullable)hijriDate resultReportingDate:(NSString * _Nullable)resultReportingDate hospitalCode:(NSString * _Nullable)hospitalCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName results:(MDSKotlinArray<MDSLaboratoryResult *> * _Nullable)results __attribute__((swift_name("doCopy(hijriDate:resultReportingDate:hospitalCode:testClassificationName:testClassificationArabicName:results:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSString *)getHospitalCode1 __attribute__((swift_name("getHospitalCode1()")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property NSString * _Nullable hijriBRFG_DTM __attribute__((swift_name("hijriBRFG_DTM")));
+@property NSString * _Nullable hijriDate __attribute__((swift_name("hijriDate")));
 @property NSString * _Nullable hospitalCode __attribute__((swift_name("hospitalCode")));
 @property NSString * _Nullable resultReportingDate __attribute__((swift_name("resultReportingDate")));
 @property MDSKotlinArray<MDSLaboratoryResult *> * _Nullable results __attribute__((swift_name("results")));
@@ -6744,11 +6744,11 @@ __attribute__((swift_name("LaboratoryFilteredItem.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("LaboratoryItem")))
 @interface MDSLaboratoryItem : MDSTestResultRoot
-- (instancetype)initWithDateOfReceipt:(NSString * _Nullable)dateOfReceipt resultReportingDate:(NSString * _Nullable)resultReportingDate count:(NSString * _Nullable)count resultType:(NSString * _Nullable)resultType testItemName:(NSString * _Nullable)testItemName inspectionItemCode:(NSString * _Nullable)inspectionItemCode testResults:(NSString * _Nullable)testResults resultRemarks:(NSString * _Nullable)resultRemarks testResultUnit:(NSString * _Nullable)testResultUnit hospitalCode:(NSString * _Nullable)hospitalCode testClassificationCode:(NSString * _Nullable)testClassificationCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName orderDate:(NSString * _Nullable)orderDate slipName:(NSString * _Nullable)slipName pactId:(NSString * _Nullable)pactId dateOfMostRecentInspection:(NSString * _Nullable)dateOfMostRecentInspection recentTestResults:(NSString * _Nullable)recentTestResults referenceValue:(NSString * _Nullable)referenceValue testResultStatus:(NSString * _Nullable)testResultStatus listingOrder:(MDSInt * _Nullable)listingOrder inspectionResultInquiry:(MDSInt * _Nullable)inspectionResultInquiry specimenName:(NSString * _Nullable)specimenName sampleNumber:(NSString * _Nullable)sampleNumber regionCode:(NSString * _Nullable)regionCode pthl_NO:(NSString * _Nullable)pthl_NO hijriBRFG_DTM:(NSString * _Nullable)hijriBRFG_DTM group_COND:(NSString * _Nullable)group_COND acpt_DTM2:(NSString * _Nullable)acpt_DTM2 __attribute__((swift_name("init(dateOfReceipt:resultReportingDate:count:resultType:testItemName:inspectionItemCode:testResults:resultRemarks:testResultUnit:hospitalCode:testClassificationCode:testClassificationName:testClassificationArabicName:orderDate:slipName:pactId:dateOfMostRecentInspection:recentTestResults:referenceValue:testResultStatus:listingOrder:inspectionResultInquiry:specimenName:sampleNumber:regionCode:pthl_NO:hijriBRFG_DTM:group_COND:acpt_DTM2:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithDateOfReceipt:(NSString * _Nullable)dateOfReceipt resultReportingDate:(NSString * _Nullable)resultReportingDate count:(NSString * _Nullable)count resultType:(NSString * _Nullable)resultType testItemName:(NSString * _Nullable)testItemName inspectionItemCode:(NSString * _Nullable)inspectionItemCode testResults:(NSString * _Nullable)testResults resultRemarks:(NSString * _Nullable)resultRemarks testResultUnit:(NSString * _Nullable)testResultUnit hospitalCode:(NSString * _Nullable)hospitalCode testClassificationCode:(NSString * _Nullable)testClassificationCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName orderDate:(NSString * _Nullable)orderDate slipName:(NSString * _Nullable)slipName pactId:(NSString * _Nullable)pactId dateOfMostRecentInspection:(NSString * _Nullable)dateOfMostRecentInspection recentTestResults:(NSString * _Nullable)recentTestResults referenceValue:(NSString * _Nullable)referenceValue testResultStatus:(NSString * _Nullable)testResultStatus listingOrder:(MDSInt * _Nullable)listingOrder inspectionResultInquiry:(MDSInt * _Nullable)inspectionResultInquiry specimenName:(NSString * _Nullable)specimenName sampleNumber:(NSString * _Nullable)sampleNumber hijriDate:(NSString * _Nullable)hijriDate regionCode:(NSString * _Nullable)regionCode pthl_NO:(NSString * _Nullable)pthl_NO acpt_DTM2:(NSString * _Nullable)acpt_DTM2 group_COND:(NSString * _Nullable)group_COND __attribute__((swift_name("init(dateOfReceipt:resultReportingDate:count:resultType:testItemName:inspectionItemCode:testResults:resultRemarks:testResultUnit:hospitalCode:testClassificationCode:testClassificationName:testClassificationArabicName:orderDate:slipName:pactId:dateOfMostRecentInspection:recentTestResults:referenceValue:testResultStatus:listingOrder:inspectionResultInquiry:specimenName:sampleNumber:hijriDate:regionCode:pthl_NO:acpt_DTM2:group_COND:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) MDSLaboratoryItemCompanion *companion __attribute__((swift_name("companion")));
-- (MDSLaboratoryItem *)doCopyDateOfReceipt:(NSString * _Nullable)dateOfReceipt resultReportingDate:(NSString * _Nullable)resultReportingDate count:(NSString * _Nullable)count resultType:(NSString * _Nullable)resultType testItemName:(NSString * _Nullable)testItemName inspectionItemCode:(NSString * _Nullable)inspectionItemCode testResults:(NSString * _Nullable)testResults resultRemarks:(NSString * _Nullable)resultRemarks testResultUnit:(NSString * _Nullable)testResultUnit hospitalCode:(NSString * _Nullable)hospitalCode testClassificationCode:(NSString * _Nullable)testClassificationCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName orderDate:(NSString * _Nullable)orderDate slipName:(NSString * _Nullable)slipName pactId:(NSString * _Nullable)pactId dateOfMostRecentInspection:(NSString * _Nullable)dateOfMostRecentInspection recentTestResults:(NSString * _Nullable)recentTestResults referenceValue:(NSString * _Nullable)referenceValue testResultStatus:(NSString * _Nullable)testResultStatus listingOrder:(MDSInt * _Nullable)listingOrder inspectionResultInquiry:(MDSInt * _Nullable)inspectionResultInquiry specimenName:(NSString * _Nullable)specimenName sampleNumber:(NSString * _Nullable)sampleNumber regionCode:(NSString * _Nullable)regionCode pthl_NO:(NSString * _Nullable)pthl_NO hijriBRFG_DTM:(NSString * _Nullable)hijriBRFG_DTM group_COND:(NSString * _Nullable)group_COND acpt_DTM2:(NSString * _Nullable)acpt_DTM2 __attribute__((swift_name("doCopy(dateOfReceipt:resultReportingDate:count:resultType:testItemName:inspectionItemCode:testResults:resultRemarks:testResultUnit:hospitalCode:testClassificationCode:testClassificationName:testClassificationArabicName:orderDate:slipName:pactId:dateOfMostRecentInspection:recentTestResults:referenceValue:testResultStatus:listingOrder:inspectionResultInquiry:specimenName:sampleNumber:regionCode:pthl_NO:hijriBRFG_DTM:group_COND:acpt_DTM2:)")));
+- (MDSLaboratoryItem *)doCopyDateOfReceipt:(NSString * _Nullable)dateOfReceipt resultReportingDate:(NSString * _Nullable)resultReportingDate count:(NSString * _Nullable)count resultType:(NSString * _Nullable)resultType testItemName:(NSString * _Nullable)testItemName inspectionItemCode:(NSString * _Nullable)inspectionItemCode testResults:(NSString * _Nullable)testResults resultRemarks:(NSString * _Nullable)resultRemarks testResultUnit:(NSString * _Nullable)testResultUnit hospitalCode:(NSString * _Nullable)hospitalCode testClassificationCode:(NSString * _Nullable)testClassificationCode testClassificationName:(NSString * _Nullable)testClassificationName testClassificationArabicName:(NSString * _Nullable)testClassificationArabicName orderDate:(NSString * _Nullable)orderDate slipName:(NSString * _Nullable)slipName pactId:(NSString * _Nullable)pactId dateOfMostRecentInspection:(NSString * _Nullable)dateOfMostRecentInspection recentTestResults:(NSString * _Nullable)recentTestResults referenceValue:(NSString * _Nullable)referenceValue testResultStatus:(NSString * _Nullable)testResultStatus listingOrder:(MDSInt * _Nullable)listingOrder inspectionResultInquiry:(MDSInt * _Nullable)inspectionResultInquiry specimenName:(NSString * _Nullable)specimenName sampleNumber:(NSString * _Nullable)sampleNumber hijriDate:(NSString * _Nullable)hijriDate regionCode:(NSString * _Nullable)regionCode pthl_NO:(NSString * _Nullable)pthl_NO acpt_DTM2:(NSString * _Nullable)acpt_DTM2 group_COND:(NSString * _Nullable)group_COND __attribute__((swift_name("doCopy(dateOfReceipt:resultReportingDate:count:resultType:testItemName:inspectionItemCode:testResults:resultRemarks:testResultUnit:hospitalCode:testClassificationCode:testClassificationName:testClassificationArabicName:orderDate:slipName:pactId:dateOfMostRecentInspection:recentTestResults:referenceValue:testResultStatus:listingOrder:inspectionResultInquiry:specimenName:sampleNumber:hijriDate:regionCode:pthl_NO:acpt_DTM2:group_COND:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSString *)getHospitalCode1 __attribute__((swift_name("getHospitalCode1()")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -6758,175 +6758,175 @@ __attribute__((swift_name("LaboratoryItem")))
  * @note annotations
  *   kotlinx.serialization.SerialName(value="acpt_DTM2")
 */
-@property NSString * _Nullable acpt_DTM2 __attribute__((swift_name("acpt_DTM2")));
+@property (readonly) NSString * _Nullable acpt_DTM2 __attribute__((swift_name("acpt_DTM2")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="count")
 */
-@property NSString * _Nullable count __attribute__((swift_name("count")));
+@property (readonly) NSString * _Nullable count __attribute__((swift_name("count")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="dateOfMostRecentInspection")
 */
-@property NSString * _Nullable dateOfMostRecentInspection __attribute__((swift_name("dateOfMostRecentInspection")));
+@property (readonly) NSString * _Nullable dateOfMostRecentInspection __attribute__((swift_name("dateOfMostRecentInspection")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="dateOfReceipt")
 */
-@property NSString * _Nullable dateOfReceipt __attribute__((swift_name("dateOfReceipt")));
+@property (readonly) NSString * _Nullable dateOfReceipt __attribute__((swift_name("dateOfReceipt")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="group_COND")
 */
-@property NSString * _Nullable group_COND __attribute__((swift_name("group_COND")));
+@property (readonly) NSString * _Nullable group_COND __attribute__((swift_name("group_COND")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="hijriBRFG_DTM")
+ *   kotlinx.serialization.SerialName(value="hijriDate")
 */
-@property NSString * _Nullable hijriBRFG_DTM __attribute__((swift_name("hijriBRFG_DTM")));
+@property (readonly) NSString * _Nullable hijriDate __attribute__((swift_name("hijriDate")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="hospitalCode")
 */
-@property NSString * _Nullable hospitalCode __attribute__((swift_name("hospitalCode")));
+@property (readonly) NSString * _Nullable hospitalCode __attribute__((swift_name("hospitalCode")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="inspectionItemCode")
 */
-@property NSString * _Nullable inspectionItemCode __attribute__((swift_name("inspectionItemCode")));
+@property (readonly) NSString * _Nullable inspectionItemCode __attribute__((swift_name("inspectionItemCode")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="inspectionResultInquiry")
 */
-@property MDSInt * _Nullable inspectionResultInquiry __attribute__((swift_name("inspectionResultInquiry")));
+@property (readonly) MDSInt * _Nullable inspectionResultInquiry __attribute__((swift_name("inspectionResultInquiry")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="listingOrder")
 */
-@property MDSInt * _Nullable listingOrder __attribute__((swift_name("listingOrder")));
+@property (readonly) MDSInt * _Nullable listingOrder __attribute__((swift_name("listingOrder")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="orderDate")
 */
-@property NSString * _Nullable orderDate __attribute__((swift_name("orderDate")));
+@property (readonly) NSString * _Nullable orderDate __attribute__((swift_name("orderDate")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="pactId")
 */
-@property NSString * _Nullable pactId __attribute__((swift_name("pactId")));
+@property (readonly) NSString * _Nullable pactId __attribute__((swift_name("pactId")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="pthl_NO")
 */
-@property NSString * _Nullable pthl_NO __attribute__((swift_name("pthl_NO")));
+@property (readonly) NSString * _Nullable pthl_NO __attribute__((swift_name("pthl_NO")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="recentTestResults")
 */
-@property NSString * _Nullable recentTestResults __attribute__((swift_name("recentTestResults")));
+@property (readonly) NSString * _Nullable recentTestResults __attribute__((swift_name("recentTestResults")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="referenceValue")
 */
-@property NSString * _Nullable referenceValue __attribute__((swift_name("referenceValue")));
+@property (readonly) NSString * _Nullable referenceValue __attribute__((swift_name("referenceValue")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="regionCode")
 */
-@property NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
+@property (readonly) NSString * _Nullable regionCode __attribute__((swift_name("regionCode")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="resultRemarks")
 */
-@property NSString * _Nullable resultRemarks __attribute__((swift_name("resultRemarks")));
+@property (readonly) NSString * _Nullable resultRemarks __attribute__((swift_name("resultRemarks")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="resultReportingDate")
 */
-@property NSString * _Nullable resultReportingDate __attribute__((swift_name("resultReportingDate")));
+@property (readonly) NSString * _Nullable resultReportingDate __attribute__((swift_name("resultReportingDate")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="resultType")
 */
-@property NSString * _Nullable resultType __attribute__((swift_name("resultType")));
+@property (readonly) NSString * _Nullable resultType __attribute__((swift_name("resultType")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="sampleNumber")
 */
-@property NSString * _Nullable sampleNumber __attribute__((swift_name("sampleNumber")));
+@property (readonly) NSString * _Nullable sampleNumber __attribute__((swift_name("sampleNumber")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="slipName")
 */
-@property NSString * _Nullable slipName __attribute__((swift_name("slipName")));
+@property (readonly) NSString * _Nullable slipName __attribute__((swift_name("slipName")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="specimenName")
 */
-@property NSString * _Nullable specimenName __attribute__((swift_name("specimenName")));
+@property (readonly) NSString * _Nullable specimenName __attribute__((swift_name("specimenName")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testClassificationArabicName")
 */
-@property NSString * _Nullable testClassificationArabicName __attribute__((swift_name("testClassificationArabicName")));
+@property (readonly) NSString * _Nullable testClassificationArabicName __attribute__((swift_name("testClassificationArabicName")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testClassificationCode")
 */
-@property NSString * _Nullable testClassificationCode __attribute__((swift_name("testClassificationCode")));
+@property (readonly) NSString * _Nullable testClassificationCode __attribute__((swift_name("testClassificationCode")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testClassificationName")
 */
-@property NSString * _Nullable testClassificationName __attribute__((swift_name("testClassificationName")));
+@property (readonly) NSString * _Nullable testClassificationName __attribute__((swift_name("testClassificationName")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testItemName")
 */
-@property NSString * _Nullable testItemName __attribute__((swift_name("testItemName")));
+@property (readonly) NSString * _Nullable testItemName __attribute__((swift_name("testItemName")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testResultStatus")
 */
-@property NSString * _Nullable testResultStatus __attribute__((swift_name("testResultStatus")));
+@property (readonly) NSString * _Nullable testResultStatus __attribute__((swift_name("testResultStatus")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testResultUnit")
 */
-@property NSString * _Nullable testResultUnit __attribute__((swift_name("testResultUnit")));
+@property (readonly) NSString * _Nullable testResultUnit __attribute__((swift_name("testResultUnit")));
 
 /**
  * @note annotations
  *   kotlinx.serialization.SerialName(value="testResults")
 */
-@property NSString * _Nullable testResults __attribute__((swift_name("testResults")));
+@property (readonly) NSString * _Nullable testResults __attribute__((swift_name("testResults")));
 @end
 
 __attribute__((objc_subclassing_restricted))

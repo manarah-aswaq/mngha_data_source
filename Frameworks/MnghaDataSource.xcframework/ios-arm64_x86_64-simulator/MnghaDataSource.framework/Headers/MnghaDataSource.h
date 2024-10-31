@@ -9462,24 +9462,12 @@ __attribute__((swift_name("ReportReason.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RequestStatusResults")))
 @interface MDSRequestStatusResults : MDSBase
-- (instancetype)initWithRecSTS_CD:(NSString * _Nullable)recSTS_CD recDTM:(NSString * _Nullable)recDTM recID:(MDSInt * _Nullable)recID dateHIJRI:(NSString * _Nullable)dateHIJRI reportENG:(NSString * _Nullable)reportENG reasonAR:(NSString * _Nullable)reasonAR reasonEN:(NSString * _Nullable)reasonEN visitDATE:(NSString * _Nullable)visitDATE reportAR:(NSString * _Nullable)reportAR mdfm_CLS_DTL_CD:(NSString * _Nullable)mdfm_CLS_DTL_CD dateHIJRI_REC_DTM:(NSString * _Nullable)dateHIJRI_REC_DTM rej_CNTE:(NSString * _Nullable)rej_CNTE __attribute__((swift_name("init(recSTS_CD:recDTM:recID:dateHIJRI:reportENG:reasonAR:reasonEN:visitDATE:reportAR:mdfm_CLS_DTL_CD:dateHIJRI_REC_DTM:rej_CNTE:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithRequestId:(MDSLong * _Nullable)requestId visitDate:(NSString * _Nullable)visitDate visitHijriDate:(NSString * _Nullable)visitHijriDate requestDate:(NSString * _Nullable)requestDate requestHijriDate:(NSString * _Nullable)requestHijriDate report:(NSString * _Nullable)report reason:(NSString * _Nullable)reason requestStatusCode:(NSString * _Nullable)requestStatusCode mdfm_CLS_DTL_CD:(NSString * _Nullable)mdfm_CLS_DTL_CD rej_CNTE:(NSString * _Nullable)rej_CNTE __attribute__((swift_name("init(requestId:visitDate:visitHijriDate:requestDate:requestHijriDate:report:reason:requestStatusCode:mdfm_CLS_DTL_CD:rej_CNTE:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSRequestStatusResultsCompanion *companion __attribute__((swift_name("companion")));
-- (MDSRequestStatusResults *)doCopyRecSTS_CD:(NSString * _Nullable)recSTS_CD recDTM:(NSString * _Nullable)recDTM recID:(MDSInt * _Nullable)recID dateHIJRI:(NSString * _Nullable)dateHIJRI reportENG:(NSString * _Nullable)reportENG reasonAR:(NSString * _Nullable)reasonAR reasonEN:(NSString * _Nullable)reasonEN visitDATE:(NSString * _Nullable)visitDATE reportAR:(NSString * _Nullable)reportAR mdfm_CLS_DTL_CD:(NSString * _Nullable)mdfm_CLS_DTL_CD dateHIJRI_REC_DTM:(NSString * _Nullable)dateHIJRI_REC_DTM rej_CNTE:(NSString * _Nullable)rej_CNTE __attribute__((swift_name("doCopy(recSTS_CD:recDTM:recID:dateHIJRI:reportENG:reasonAR:reasonEN:visitDATE:reportAR:mdfm_CLS_DTL_CD:dateHIJRI_REC_DTM:rej_CNTE:)")));
+- (MDSRequestStatusResults *)doCopyRequestId:(MDSLong * _Nullable)requestId visitDate:(NSString * _Nullable)visitDate visitHijriDate:(NSString * _Nullable)visitHijriDate requestDate:(NSString * _Nullable)requestDate requestHijriDate:(NSString * _Nullable)requestHijriDate report:(NSString * _Nullable)report reason:(NSString * _Nullable)reason requestStatusCode:(NSString * _Nullable)requestStatusCode mdfm_CLS_DTL_CD:(NSString * _Nullable)mdfm_CLS_DTL_CD rej_CNTE:(NSString * _Nullable)rej_CNTE __attribute__((swift_name("doCopy(requestId:visitDate:visitHijriDate:requestDate:requestHijriDate:report:reason:requestStatusCode:mdfm_CLS_DTL_CD:rej_CNTE:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="date_HIJRI")
-*/
-@property (readonly) NSString * _Nullable dateHIJRI __attribute__((swift_name("dateHIJRI")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="date_HIJRI_REC_DTM")
-*/
-@property (readonly) NSString * _Nullable dateHIJRI_REC_DTM __attribute__((swift_name("dateHIJRI_REC_DTM")));
 
 /**
  * @note annotations
@@ -9489,33 +9477,9 @@ __attribute__((swift_name("RequestStatusResults")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="reason_AR")
+ *   kotlinx.serialization.SerialName(value="reason")
 */
-@property (readonly) NSString * _Nullable reasonAR __attribute__((swift_name("reasonAR")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="reason_EN")
-*/
-@property (readonly) NSString * _Nullable reasonEN __attribute__((swift_name("reasonEN")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="rec_DTM")
-*/
-@property (readonly) NSString * _Nullable recDTM __attribute__((swift_name("recDTM")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="rec_ID")
-*/
-@property (readonly) MDSInt * _Nullable recID __attribute__((swift_name("recID")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="rec_STS_CD")
-*/
-@property (readonly) NSString * _Nullable recSTS_CD __attribute__((swift_name("recSTS_CD")));
+@property (readonly) NSString * _Nullable reason __attribute__((swift_name("reason")));
 
 /**
  * @note annotations
@@ -9525,21 +9489,45 @@ __attribute__((swift_name("RequestStatusResults")))
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="report_AR")
+ *   kotlinx.serialization.SerialName(value="report")
 */
-@property (readonly) NSString * _Nullable reportAR __attribute__((swift_name("reportAR")));
+@property (readonly) NSString * _Nullable report __attribute__((swift_name("report")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="report_ENG")
+ *   kotlinx.serialization.SerialName(value="requestDate")
 */
-@property (readonly) NSString * _Nullable reportENG __attribute__((swift_name("reportENG")));
+@property (readonly) NSString * _Nullable requestDate __attribute__((swift_name("requestDate")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="visit_DATE")
+ *   kotlinx.serialization.SerialName(value="requestHijriDate")
 */
-@property (readonly) NSString * _Nullable visitDATE __attribute__((swift_name("visitDATE")));
+@property (readonly) NSString * _Nullable requestHijriDate __attribute__((swift_name("requestHijriDate")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="requestId")
+*/
+@property (readonly) MDSLong * _Nullable requestId __attribute__((swift_name("requestId")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="requestStatusCode")
+*/
+@property (readonly) NSString * _Nullable requestStatusCode __attribute__((swift_name("requestStatusCode")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="visitDate")
+*/
+@property (readonly) NSString * _Nullable visitDate __attribute__((swift_name("visitDate")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="visitHijriDate")
+*/
+@property (readonly) NSString * _Nullable visitHijriDate __attribute__((swift_name("visitHijriDate")));
 @end
 
 __attribute__((objc_subclassing_restricted))

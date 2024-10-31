@@ -824,7 +824,7 @@ __attribute__((swift_name("MnghaDataSource")))
  * @note This method converts instances of Exception to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
-- (void)sendAfterVisitReportMessageId:(NSString *)messageId medDeptCd:(NSString *)medDeptCd inMedDrSid:(NSString *)inMedDrSid hospitalCode:(NSString *)hospitalCode medicalDate:(NSString *)medicalDate completionHandler:(void (^)(MDSResponse<MDSStatusResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendAfterVisitReport(messageId:medDeptCd:inMedDrSid:hospitalCode:medicalDate:completionHandler:)")));
+- (void)sendAfterVisitReportMessageId:(NSString *)messageId medDeptCd:(NSString *)medDeptCd hospitalCode:(NSString *)hospitalCode medicalDate:(NSString *)medicalDate completionHandler:(void (^)(MDSResponse<MDSStatusResponse *> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("sendAfterVisitReport(messageId:medDeptCd:hospitalCode:medicalDate:completionHandler:)")));
 
 /**
  * @note This method converts instances of Exception to errors.

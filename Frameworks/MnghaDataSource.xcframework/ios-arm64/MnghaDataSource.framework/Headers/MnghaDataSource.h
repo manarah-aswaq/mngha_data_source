@@ -1946,9 +1946,9 @@ __attribute__((swift_name("AppInfo.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AppointmentRequestDto")))
 @interface MDSAppointmentRequestDto : MDSBase
-- (instancetype)initWithEmployeeFlag:(MDSBoolean * _Nullable)employeeFlag dentalFlag:(MDSBoolean * _Nullable)dentalFlag directFlag:(MDSBoolean * _Nullable)directFlag vaccinationFlag:(MDSBoolean * _Nullable)vaccinationFlag refillFlag:(MDSBoolean * _Nullable)refillFlag hospitalCode:(NSString * _Nullable)hospitalCode status:(NSString * _Nullable)status amPmMarker:(NSString * _Nullable)amPmMarker requestReason:(NSString * _Nullable)requestReason basicAddress:(NSString * _Nullable)basicAddress detailsAddress:(NSString * _Nullable)detailsAddress inApptReschudleYn:(MDSBoolean * _Nullable)inApptReschudleYn inHopeMedEndDt:(NSString * _Nullable)inHopeMedEndDt inHopeMedStrDt:(NSString * _Nullable)inHopeMedStrDt inMedrStfNo:(NSString * _Nullable)inMedrStfNo inMedSrvCd:(NSString * _Nullable)inMedSrvCd inMpdYn:(MDSBoolean * _Nullable)inMpdYn inMedDate:(NSString * _Nullable)inMedDate inMedDeptCd:(NSString * _Nullable)inMedDeptCd inPhcYn:(MDSBoolean * _Nullable)inPhcYn inHmpsAddr:(NSString * _Nullable)inHmpsAddr inPhcWest:(NSString * _Nullable)inPhcWest inCtyNm:(NSString * _Nullable)inCtyNm inAddr:(NSString * _Nullable)inAddr __attribute__((swift_name("init(employeeFlag:dentalFlag:directFlag:vaccinationFlag:refillFlag:hospitalCode:status:amPmMarker:requestReason:basicAddress:detailsAddress:inApptReschudleYn:inHopeMedEndDt:inHopeMedStrDt:inMedrStfNo:inMedSrvCd:inMpdYn:inMedDate:inMedDeptCd:inPhcYn:inHmpsAddr:inPhcWest:inCtyNm:inAddr:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithEmployeeFlag:(MDSBoolean * _Nullable)employeeFlag dentalFlag:(MDSBoolean * _Nullable)dentalFlag directFlag:(MDSBoolean * _Nullable)directFlag vaccinationFlag:(MDSBoolean * _Nullable)vaccinationFlag refillFlag:(MDSBoolean * _Nullable)refillFlag hospitalCode:(NSString * _Nullable)hospitalCode status:(NSString * _Nullable)status amPmMarker:(NSString * _Nullable)amPmMarker requestReason:(NSString * _Nullable)requestReason basicAddress:(NSString * _Nullable)basicAddress detailsAddress:(NSString * _Nullable)detailsAddress inApptReschudleYn:(MDSBoolean * _Nullable)inApptReschudleYn inHopeMedEndDt:(NSString * _Nullable)inHopeMedEndDt inHopeMedStrDt:(NSString * _Nullable)inHopeMedStrDt inMedrStfNo:(NSString * _Nullable)inMedrStfNo inMedSrvCd:(NSString * _Nullable)inMedSrvCd inMpdYn:(MDSBoolean * _Nullable)inMpdYn inMedDate:(NSString * _Nullable)inMedDate inPhcYn:(MDSBoolean * _Nullable)inPhcYn inHmpsAddr:(NSString * _Nullable)inHmpsAddr inPhcWest:(NSString * _Nullable)inPhcWest inCtyNm:(NSString * _Nullable)inCtyNm inAddr:(NSString * _Nullable)inAddr __attribute__((swift_name("init(employeeFlag:dentalFlag:directFlag:vaccinationFlag:refillFlag:hospitalCode:status:amPmMarker:requestReason:basicAddress:detailsAddress:inApptReschudleYn:inHopeMedEndDt:inHopeMedStrDt:inMedrStfNo:inMedSrvCd:inMpdYn:inMedDate:inPhcYn:inHmpsAddr:inPhcWest:inCtyNm:inAddr:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSAppointmentRequestDtoCompanion *companion __attribute__((swift_name("companion")));
-- (MDSAppointmentRequestDto *)doCopyEmployeeFlag:(MDSBoolean * _Nullable)employeeFlag dentalFlag:(MDSBoolean * _Nullable)dentalFlag directFlag:(MDSBoolean * _Nullable)directFlag vaccinationFlag:(MDSBoolean * _Nullable)vaccinationFlag refillFlag:(MDSBoolean * _Nullable)refillFlag hospitalCode:(NSString * _Nullable)hospitalCode status:(NSString * _Nullable)status amPmMarker:(NSString * _Nullable)amPmMarker requestReason:(NSString * _Nullable)requestReason basicAddress:(NSString * _Nullable)basicAddress detailsAddress:(NSString * _Nullable)detailsAddress inApptReschudleYn:(MDSBoolean * _Nullable)inApptReschudleYn inHopeMedEndDt:(NSString * _Nullable)inHopeMedEndDt inHopeMedStrDt:(NSString * _Nullable)inHopeMedStrDt inMedrStfNo:(NSString * _Nullable)inMedrStfNo inMedSrvCd:(NSString * _Nullable)inMedSrvCd inMpdYn:(MDSBoolean * _Nullable)inMpdYn inMedDate:(NSString * _Nullable)inMedDate inMedDeptCd:(NSString * _Nullable)inMedDeptCd inPhcYn:(MDSBoolean * _Nullable)inPhcYn inHmpsAddr:(NSString * _Nullable)inHmpsAddr inPhcWest:(NSString * _Nullable)inPhcWest inCtyNm:(NSString * _Nullable)inCtyNm inAddr:(NSString * _Nullable)inAddr __attribute__((swift_name("doCopy(employeeFlag:dentalFlag:directFlag:vaccinationFlag:refillFlag:hospitalCode:status:amPmMarker:requestReason:basicAddress:detailsAddress:inApptReschudleYn:inHopeMedEndDt:inHopeMedStrDt:inMedrStfNo:inMedSrvCd:inMpdYn:inMedDate:inMedDeptCd:inPhcYn:inHmpsAddr:inPhcWest:inCtyNm:inAddr:)")));
+- (MDSAppointmentRequestDto *)doCopyEmployeeFlag:(MDSBoolean * _Nullable)employeeFlag dentalFlag:(MDSBoolean * _Nullable)dentalFlag directFlag:(MDSBoolean * _Nullable)directFlag vaccinationFlag:(MDSBoolean * _Nullable)vaccinationFlag refillFlag:(MDSBoolean * _Nullable)refillFlag hospitalCode:(NSString * _Nullable)hospitalCode status:(NSString * _Nullable)status amPmMarker:(NSString * _Nullable)amPmMarker requestReason:(NSString * _Nullable)requestReason basicAddress:(NSString * _Nullable)basicAddress detailsAddress:(NSString * _Nullable)detailsAddress inApptReschudleYn:(MDSBoolean * _Nullable)inApptReschudleYn inHopeMedEndDt:(NSString * _Nullable)inHopeMedEndDt inHopeMedStrDt:(NSString * _Nullable)inHopeMedStrDt inMedrStfNo:(NSString * _Nullable)inMedrStfNo inMedSrvCd:(NSString * _Nullable)inMedSrvCd inMpdYn:(MDSBoolean * _Nullable)inMpdYn inMedDate:(NSString * _Nullable)inMedDate inPhcYn:(MDSBoolean * _Nullable)inPhcYn inHmpsAddr:(NSString * _Nullable)inHmpsAddr inPhcWest:(NSString * _Nullable)inPhcWest inCtyNm:(NSString * _Nullable)inCtyNm inAddr:(NSString * _Nullable)inAddr __attribute__((swift_name("doCopy(employeeFlag:dentalFlag:directFlag:vaccinationFlag:refillFlag:hospitalCode:status:amPmMarker:requestReason:basicAddress:detailsAddress:inApptReschudleYn:inHopeMedEndDt:inHopeMedStrDt:inMedrStfNo:inMedSrvCd:inMpdYn:inMedDate:inPhcYn:inHmpsAddr:inPhcWest:inCtyNm:inAddr:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -2036,12 +2036,6 @@ __attribute__((swift_name("AppointmentRequestDto")))
  *   kotlinx.serialization.SerialName(value="inMedDate")
 */
 @property (readonly) NSString * _Nullable inMedDate __attribute__((swift_name("inMedDate")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="in_MED_DEPT_CD")
-*/
-@property (readonly) NSString * _Nullable inMedDeptCd __attribute__((swift_name("inMedDeptCd")));
 
 /**
  * @note annotations
@@ -7588,24 +7582,18 @@ __attribute__((swift_name("NotificationListResult.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PHC")))
 @interface MDSPHC : MDSBase
-- (instancetype)initWithEnglishName:(NSString * _Nullable)englishName arabicName:(NSString * _Nullable)arabicName __attribute__((swift_name("init(englishName:arabicName:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithName:(NSString * _Nullable)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSPHCCompanion *companion __attribute__((swift_name("companion")));
-- (MDSPHC *)doCopyEnglishName:(NSString * _Nullable)englishName arabicName:(NSString * _Nullable)arabicName __attribute__((swift_name("doCopy(englishName:arabicName:)")));
+- (MDSPHC *)doCopyName:(NSString * _Nullable)name __attribute__((swift_name("doCopy(name:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
 
 /**
  * @note annotations
- *   kotlinx.serialization.SerialName(value="arabicName")
+ *   kotlinx.serialization.SerialName(value="name")
 */
-@property NSString * _Nullable arabicName __attribute__((swift_name("arabicName")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="englishName")
-*/
-@property NSString * _Nullable englishName __attribute__((swift_name("englishName")));
+@property NSString * _Nullable name __attribute__((swift_name("name")));
 @end
 
 __attribute__((objc_subclassing_restricted))

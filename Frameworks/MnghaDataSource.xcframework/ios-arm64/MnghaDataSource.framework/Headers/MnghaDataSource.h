@@ -8993,11 +8993,11 @@ __attribute__((swift_name("QuestionDetail.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("RadiologyItem")))
 @interface MDSRadiologyItem : MDSTestResultRoot
-- (instancetype)initWithCodeName:(NSString * _Nullable)codeName arabicCodeName:(NSString * _Nullable)arabicCodeName conclusion:(NSString * _Nullable)conclusion executionDate:(NSString * _Nullable)executionDate inspectionStatusCode:(NSString * _Nullable)inspectionStatusCode inspectionStatusName:(NSString * _Nullable)inspectionStatusName hospitalCode:(NSString * _Nullable)hospitalCode reportDate:(NSString * _Nullable)reportDate inspectionItemCode:(NSString * _Nullable)inspectionItemCode packId:(NSString * _Nullable)packId packTypeCode:(NSString * _Nullable)packTypeCode hijriDate:(NSString * _Nullable)hijriDate accs_ID:(NSString * _Nullable)accs_ID hspi_TP_CD:(NSString * _Nullable)hspi_TP_CD spcm_PTHL_NO:(NSString * _Nullable)spcm_PTHL_NO iptn_EXPL:(NSString * _Nullable)iptn_EXPL exam_GUBN:(NSString * _Nullable)exam_GUBN zfpurlweb:(NSString * _Nullable)zfpurlweb zfpurl:(NSString * _Nullable)zfpurl __attribute__((swift_name("init(codeName:arabicCodeName:conclusion:executionDate:inspectionStatusCode:inspectionStatusName:hospitalCode:reportDate:inspectionItemCode:packId:packTypeCode:hijriDate:accs_ID:hspi_TP_CD:spcm_PTHL_NO:iptn_EXPL:exam_GUBN:zfpurlweb:zfpurl:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithCodeName:(NSString * _Nullable)codeName arabicCodeName:(NSString * _Nullable)arabicCodeName conclusion:(NSString * _Nullable)conclusion orderDate:(NSString * _Nullable)orderDate inspectionStatusCode:(NSString * _Nullable)inspectionStatusCode inspectionStatusName:(NSString * _Nullable)inspectionStatusName hospitalCode:(NSString * _Nullable)hospitalCode reportDate:(NSString * _Nullable)reportDate inspectionItemCode:(NSString * _Nullable)inspectionItemCode packId:(NSString * _Nullable)packId packTypeCode:(NSString * _Nullable)packTypeCode hijriDate:(NSString * _Nullable)hijriDate accs_ID:(NSString * _Nullable)accs_ID hspi_TP_CD:(NSString * _Nullable)hspi_TP_CD spcm_PTHL_NO:(NSString * _Nullable)spcm_PTHL_NO iptn_EXPL:(NSString * _Nullable)iptn_EXPL exam_GUBN:(NSString * _Nullable)exam_GUBN zfpurlweb:(NSString * _Nullable)zfpurlweb zfpurl:(NSString * _Nullable)zfpurl __attribute__((swift_name("init(codeName:arabicCodeName:conclusion:orderDate:inspectionStatusCode:inspectionStatusName:hospitalCode:reportDate:inspectionItemCode:packId:packTypeCode:hijriDate:accs_ID:hspi_TP_CD:spcm_PTHL_NO:iptn_EXPL:exam_GUBN:zfpurlweb:zfpurl:)"))) __attribute__((objc_designated_initializer));
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
 + (instancetype)new __attribute__((unavailable));
 @property (class, readonly, getter=companion) MDSRadiologyItemCompanion *companion __attribute__((swift_name("companion")));
-- (MDSRadiologyItem *)doCopyCodeName:(NSString * _Nullable)codeName arabicCodeName:(NSString * _Nullable)arabicCodeName conclusion:(NSString * _Nullable)conclusion executionDate:(NSString * _Nullable)executionDate inspectionStatusCode:(NSString * _Nullable)inspectionStatusCode inspectionStatusName:(NSString * _Nullable)inspectionStatusName hospitalCode:(NSString * _Nullable)hospitalCode reportDate:(NSString * _Nullable)reportDate inspectionItemCode:(NSString * _Nullable)inspectionItemCode packId:(NSString * _Nullable)packId packTypeCode:(NSString * _Nullable)packTypeCode hijriDate:(NSString * _Nullable)hijriDate accs_ID:(NSString * _Nullable)accs_ID hspi_TP_CD:(NSString * _Nullable)hspi_TP_CD spcm_PTHL_NO:(NSString * _Nullable)spcm_PTHL_NO iptn_EXPL:(NSString * _Nullable)iptn_EXPL exam_GUBN:(NSString * _Nullable)exam_GUBN zfpurlweb:(NSString * _Nullable)zfpurlweb zfpurl:(NSString * _Nullable)zfpurl __attribute__((swift_name("doCopy(codeName:arabicCodeName:conclusion:executionDate:inspectionStatusCode:inspectionStatusName:hospitalCode:reportDate:inspectionItemCode:packId:packTypeCode:hijriDate:accs_ID:hspi_TP_CD:spcm_PTHL_NO:iptn_EXPL:exam_GUBN:zfpurlweb:zfpurl:)")));
+- (MDSRadiologyItem *)doCopyCodeName:(NSString * _Nullable)codeName arabicCodeName:(NSString * _Nullable)arabicCodeName conclusion:(NSString * _Nullable)conclusion orderDate:(NSString * _Nullable)orderDate inspectionStatusCode:(NSString * _Nullable)inspectionStatusCode inspectionStatusName:(NSString * _Nullable)inspectionStatusName hospitalCode:(NSString * _Nullable)hospitalCode reportDate:(NSString * _Nullable)reportDate inspectionItemCode:(NSString * _Nullable)inspectionItemCode packId:(NSString * _Nullable)packId packTypeCode:(NSString * _Nullable)packTypeCode hijriDate:(NSString * _Nullable)hijriDate accs_ID:(NSString * _Nullable)accs_ID hspi_TP_CD:(NSString * _Nullable)hspi_TP_CD spcm_PTHL_NO:(NSString * _Nullable)spcm_PTHL_NO iptn_EXPL:(NSString * _Nullable)iptn_EXPL exam_GUBN:(NSString * _Nullable)exam_GUBN zfpurlweb:(NSString * _Nullable)zfpurlweb zfpurl:(NSString * _Nullable)zfpurl __attribute__((swift_name("doCopy(codeName:arabicCodeName:conclusion:orderDate:inspectionStatusCode:inspectionStatusName:hospitalCode:reportDate:inspectionItemCode:packId:packTypeCode:hijriDate:accs_ID:hspi_TP_CD:spcm_PTHL_NO:iptn_EXPL:exam_GUBN:zfpurlweb:zfpurl:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSString *)getHospitalCode1 __attribute__((swift_name("getHospitalCode1()")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
@@ -9032,12 +9032,6 @@ __attribute__((swift_name("RadiologyItem")))
  *   kotlinx.serialization.SerialName(value="exam_GUBN")
 */
 @property NSString * _Nullable exam_GUBN __attribute__((swift_name("exam_GUBN")));
-
-/**
- * @note annotations
- *   kotlinx.serialization.SerialName(value="executionDate")
-*/
-@property NSString * _Nullable executionDate __attribute__((swift_name("executionDate")));
 
 /**
  * @note annotations
@@ -9080,6 +9074,12 @@ __attribute__((swift_name("RadiologyItem")))
  *   kotlinx.serialization.SerialName(value="iptn_EXPL")
 */
 @property NSString * _Nullable iptn_EXPL __attribute__((swift_name("iptn_EXPL")));
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.SerialName(value="orderDate")
+*/
+@property NSString * _Nullable orderDate __attribute__((swift_name("orderDate")));
 
 /**
  * @note annotations

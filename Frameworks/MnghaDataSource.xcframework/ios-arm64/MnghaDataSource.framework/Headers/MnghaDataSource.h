@@ -1981,7 +1981,7 @@ __attribute__((swift_name("AppointmentRequestDto")))
  * @note annotations
  *   kotlinx.serialization.SerialName(value="directFlag")
 */
-@property (readonly) MDSBoolean * _Nullable directFlag __attribute__((swift_name("directFlag")));
+@property MDSBoolean * _Nullable directFlag __attribute__((swift_name("directFlag")));
 
 /**
  * @note annotations
@@ -2065,7 +2065,7 @@ __attribute__((swift_name("AppointmentRequestDto")))
  * @note annotations
  *   kotlinx.serialization.SerialName(value="in_PHC_YN")
 */
-@property (readonly) MDSBoolean * _Nullable inPhcYn __attribute__((swift_name("inPhcYn")));
+@property MDSBoolean * _Nullable inPhcYn __attribute__((swift_name("inPhcYn")));
 
 /**
  * @note annotations
@@ -10441,9 +10441,9 @@ __attribute__((swift_name("UpdateNotBc.Companion")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("VCareService")))
 @interface MDSVCareService : MDSBase
-- (instancetype)initWithArabicDisclaimer:(NSString * _Nullable)arabicDisclaimer endTime:(NSString * _Nullable)endTime serviceBrief:(NSString * _Nullable)serviceBrief englishDisclaimer:(NSString * _Nullable)englishDisclaimer hospitalName:(NSString * _Nullable)hospitalName hospitalCode:(NSString * _Nullable)hospitalCode arabicHospitalName:(NSString * _Nullable)arabicHospitalName serviceName:(NSString * _Nullable)serviceName serviceCode:(NSString * _Nullable)serviceCode startTime:(NSString * _Nullable)startTime allowYN:(NSString * _Nullable)allowYN __attribute__((swift_name("init(arabicDisclaimer:endTime:serviceBrief:englishDisclaimer:hospitalName:hospitalCode:arabicHospitalName:serviceName:serviceCode:startTime:allowYN:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithArabicDisclaimer:(NSString * _Nullable)arabicDisclaimer endTime:(NSString * _Nullable)endTime serviceBrief:(NSString * _Nullable)serviceBrief englishDisclaimer:(NSString * _Nullable)englishDisclaimer hospitalName:(NSString * _Nullable)hospitalName hospitalCode:(NSString * _Nullable)hospitalCode arabicHospitalName:(NSString * _Nullable)arabicHospitalName serviceName:(NSString * _Nullable)serviceName serviceCode:(NSString * _Nullable)serviceCode startTime:(NSString * _Nullable)startTime allowYN:(NSString * _Nullable)allowYN phcYn:(BOOL)phcYn directYn:(BOOL)directYn __attribute__((swift_name("init(arabicDisclaimer:endTime:serviceBrief:englishDisclaimer:hospitalName:hospitalCode:arabicHospitalName:serviceName:serviceCode:startTime:allowYN:phcYn:directYn:)"))) __attribute__((objc_designated_initializer));
 @property (class, readonly, getter=companion) MDSVCareServiceCompanion *companion __attribute__((swift_name("companion")));
-- (MDSVCareService *)doCopyArabicDisclaimer:(NSString * _Nullable)arabicDisclaimer endTime:(NSString * _Nullable)endTime serviceBrief:(NSString * _Nullable)serviceBrief englishDisclaimer:(NSString * _Nullable)englishDisclaimer hospitalName:(NSString * _Nullable)hospitalName hospitalCode:(NSString * _Nullable)hospitalCode arabicHospitalName:(NSString * _Nullable)arabicHospitalName serviceName:(NSString * _Nullable)serviceName serviceCode:(NSString * _Nullable)serviceCode startTime:(NSString * _Nullable)startTime allowYN:(NSString * _Nullable)allowYN __attribute__((swift_name("doCopy(arabicDisclaimer:endTime:serviceBrief:englishDisclaimer:hospitalName:hospitalCode:arabicHospitalName:serviceName:serviceCode:startTime:allowYN:)")));
+- (MDSVCareService *)doCopyArabicDisclaimer:(NSString * _Nullable)arabicDisclaimer endTime:(NSString * _Nullable)endTime serviceBrief:(NSString * _Nullable)serviceBrief englishDisclaimer:(NSString * _Nullable)englishDisclaimer hospitalName:(NSString * _Nullable)hospitalName hospitalCode:(NSString * _Nullable)hospitalCode arabicHospitalName:(NSString * _Nullable)arabicHospitalName serviceName:(NSString * _Nullable)serviceName serviceCode:(NSString * _Nullable)serviceCode startTime:(NSString * _Nullable)startTime allowYN:(NSString * _Nullable)allowYN phcYn:(BOOL)phcYn directYn:(BOOL)directYn __attribute__((swift_name("doCopy(arabicDisclaimer:endTime:serviceBrief:englishDisclaimer:hospitalName:hospitalCode:arabicHospitalName:serviceName:serviceCode:startTime:allowYN:phcYn:directYn:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -10465,6 +10465,7 @@ __attribute__((swift_name("VCareService")))
  *   kotlinx.serialization.SerialName(value="arabicHospitalName")
 */
 @property (readonly) NSString * _Nullable arabicHospitalName __attribute__((swift_name("arabicHospitalName")));
+@property BOOL directYn __attribute__((swift_name("directYn")));
 
 /**
  * @note annotations
@@ -10489,6 +10490,7 @@ __attribute__((swift_name("VCareService")))
  *   kotlinx.serialization.SerialName(value="hospitalName")
 */
 @property (readonly) NSString * _Nullable hospitalName __attribute__((swift_name("hospitalName")));
+@property BOOL phcYn __attribute__((swift_name("phcYn")));
 
 /**
  * @note annotations

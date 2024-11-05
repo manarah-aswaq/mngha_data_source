@@ -1045,6 +1045,12 @@ __attribute__((swift_name("ApiCaller")))
  * @note This method converts instances of CancellationException to errors.
  * Other uncaught Kotlin exceptions are fatal.
 */
+- (void)post_MultiPart2EndPoint:(NSString *)endPoint body:(MDSMutableDictionary<NSString *, NSString *> *)body completionHandler:(void (^)(MDSResponse<id> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("post_MultiPart2(endPoint:body:completionHandler:)")));
+
+/**
+ * @note This method converts instances of CancellationException to errors.
+ * Other uncaught Kotlin exceptions are fatal.
+*/
 - (void)putEndPoint:(NSString *)endPoint body:(id _Nullable)body completionHandler:(void (^)(MDSResponse<id> * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("put(endPoint:body:completionHandler:)")));
 
 /**

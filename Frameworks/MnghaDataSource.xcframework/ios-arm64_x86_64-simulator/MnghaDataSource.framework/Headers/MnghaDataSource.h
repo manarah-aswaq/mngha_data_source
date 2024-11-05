@@ -13271,7 +13271,6 @@ __attribute__((swift_name("Ktor_utilsWeekDay")))
 @property (class, readonly) MDSKtor_utilsWeekDay *saturday __attribute__((swift_name("saturday")));
 @property (class, readonly) MDSKtor_utilsWeekDay *sunday __attribute__((swift_name("sunday")));
 + (MDSKotlinArray<MDSKtor_utilsWeekDay *> *)values __attribute__((swift_name("values()")));
-@property (class, readonly) NSArray<MDSKtor_utilsWeekDay *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
 
@@ -13295,7 +13294,6 @@ __attribute__((swift_name("Ktor_utilsMonth")))
 @property (class, readonly) MDSKtor_utilsMonth *november __attribute__((swift_name("november")));
 @property (class, readonly) MDSKtor_utilsMonth *december __attribute__((swift_name("december")));
 + (MDSKotlinArray<MDSKtor_utilsMonth *> *)values __attribute__((swift_name("values()")));
-@property (class, readonly) NSArray<MDSKtor_utilsMonth *> *entries __attribute__((swift_name("entries")));
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end
 
